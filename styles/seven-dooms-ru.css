@@ -1,0 +1,225 @@
+/* Шрифты уже загружены PF2e; ресурсы оригинала остаются в официальном модуле. */
+.seven-dooms-ru-content {
+  font-family: Vollkorn, Georgia, serif;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h1:not(.window-title) {
+  font-family: Vollkorn, Georgia, serif;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h2,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h3,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h4,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h5,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h6,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content table,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content aside,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .action,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .action p,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .encounter,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .read-aloud,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .trait,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .advancement-track h1,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content aside h1,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h1:not(.window-title).contents,
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h1:not(.window-title).table {
+  font-family: "Roboto Condensed", Roboto, sans-serif;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content :is(p, li, td, th, h1, h2, h3, h4, h5, h6) {
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content :is(h1, h2, h3, h4, h5, h6) {
+  white-space: normal;
+  text-wrap: balance;
+}
+
+/* Фон и выступающие края заставки сохраняются; высота следует за русским текстом. */
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content h1:not(.window-title).chapter-heading {
+  font-family: Vollkorn, Georgia, serif;
+  font-size: clamp(1.8rem, 5vw, 3em);
+  line-height: 1.05;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .split {
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 1rem;
+  row-gap: 0.2em;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .split > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .split > :first-child:not(:last-child) {
+  flex: 1 1 12rem;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .split > :last-child:not(:first-child) {
+  flex: 0 1 auto;
+  text-align: end;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content :is(section.action, section.encounter) {
+  min-width: 0;
+}
+
+/* В исходнике первая строка имеет фиксированную высоту 2.625em. */
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .encounter .header {
+  grid-template: "icon title" auto "icon link" auto / 5.25em minmax(0, 1fr);
+  min-height: 5.25em;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .encounter .header :is(h2, .link) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content aside {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.journal-sheet :is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content aside.sidebar:not(.journal-sidebar) {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  max-height: none;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .read-aloud {
+  /* Исходные рамки, фон, псевдоэлементы и действие щелчка сохраняются. */
+  min-width: 0;
+  padding-right: 1.5em;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content table {
+  max-width: 100%;
+  table-layout: fixed;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content table.wide {
+  width: 100%;
+  margin-inline: 0;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content :is(th, td) {
+  white-space: normal;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content :is(a.entity-link, a.content-link, a.inline-roll, a.inline-check, span[data-pf2-check]) {
+  font-family: "Roboto Condensed", Roboto, sans-serif;
+  box-sizing: border-box;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .handout {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  width: calc(100% - 50px);
+  max-width: 100%;
+  padding-inline: clamp(1em, 6%, 3.5em);
+}
+
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .handout.handout1 > p {
+  font-family: Vollkorn, Georgia, serif;
+  line-height: 1.4;
+}
+
+/* Aberration из оригинала действительно содержит весь русский алфавит. */
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content .handout :is(h1:not(.window-title), h2) {
+  font-family: Aberration, Vollkorn, Georgia, serif;
+}
+
+.seven-dooms-ru-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Только окна и строки, явно помеченные macro-ui.js/display-text.js. */
+.pf2e-seven-dooms-ru {
+  --serif: Vollkorn, Georgia, serif;
+  --body-serif: Vollkorn, Georgia, serif;
+  --serif-condensed: Vollkorn, Georgia, serif;
+  --journal-cursive: Vollkorn, Georgia, serif;
+}
+
+.pf2e-seven-dooms-ru :is(.editor-content, .item-summary) {
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.pf2e-seven-dooms-ru :is(.window-title, .form-group > label, .hint, .item-block-line) {
+  font-family: "Roboto Condensed", Roboto, sans-serif;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
+  min-width: 0;
+}
+
+dialog.pf2e-seven-dooms-ru button {
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
+  height: auto;
+  min-height: var(--input-height, 2rem);
+}
+
+.pf2e-seven-dooms-ru .seven-dooms-ru-display-value {
+  font-family: "Roboto Condensed", Roboto, sans-serif;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.2em 0.4em;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
+  cursor: text;
+}
+
+.pf2e-seven-dooms-ru .seven-dooms-ru-display-value:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Атрибут hidden управляет переходом к редактированию исходного значения. */
+.pf2e-seven-dooms-ru .seven-dooms-ru-display-value[hidden],
+.pf2e-seven-dooms-ru input[data-seven-dooms-display][hidden] {
+  display: none !important;
+}
+
+/* Подписи 188 image-страниц и внешний заголовок находятся вне текстового wrapper. */
+.pf2e-seven-dooms-ru:is(.sevendooms, .sevendooms-wrapper) .journal-page-header :is(h1, h2, h3),
+.pf2e-seven-dooms-ru:is(.sevendooms, .sevendooms-wrapper) figcaption {
+  font-family: Vollkorn, Georgia, serif;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.pf2e-seven-dooms-ru:is(.sevendooms, .sevendooms-wrapper) .journal-sidebar .page-title {
+  font-family: "Roboto Condensed", Roboto, sans-serif;
+}
+
+/* Две колонки хронологии: дата остаётся уже описания события. */
+:is(.sevendooms, .sevendooms-wrapper) .seven-dooms-ru-content table:has(tr:first-child > :nth-child(2):last-child) tr > :first-child {
+  width: 22%;
+}

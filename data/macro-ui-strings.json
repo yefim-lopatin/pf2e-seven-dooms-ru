@@ -1,0 +1,1606 @@
+{
+  "schemaVersion": 1,
+  "strings": {
+    "Style Login Screen": "Оформить экран входа",
+    "Display Introduction": "Показать введение",
+    "Activate Scene": "Активировать сцену",
+    "Execute Macro": "Выполнить макрос",
+    "Close": "Закрыть",
+    "Change Tile Image": "Изменить изображение тайла",
+    "Toggle Teleportation Circle lighting": "Освещение кругов телепортации",
+    "Which Teleportation circle to toggle?": "Какой круг телепортации переключить?",
+    "Toggle Gearworks Audio": "Звуки механизмов",
+    "Which room to toggle Gearworks audio for?": "В какой комнате переключить звуки механизмов?",
+    "H12-15 Hall": "Коридор H12–H15",
+    "Abandoned Village": "Заброшенная деревня",
+    "Is it day or night?": "Сейчас день или ночь?",
+    "Day": "День",
+    "Night (Rolls 1d4)": "Ночь (бросок 1d4)",
+    "Landing Screen Picker": "Выбор заставки",
+    "Which landing screen should be shown?": "Какую заставку показать?",
+    "Cover (Softcover)": "Обложка мягкого издания",
+    "Cover (Hardcover)": "Обложка твёрдого издания",
+    "Campaign Overview": "Обзор кампании",
+    "Introduction": "Введение",
+    "Sandpoint Gazatteer Opener": "Заставка путеводителя по Сэндпойнту",
+    "A View of Sandpoint": "Вид Сэндпойнта",
+    "The Fungus Court (Toolbox Opener)": "Грибной двор (заставка инструментов)",
+    "Blank Landing Page": "Пустая заставка",
+    "Daylight Hours in the Pit": "Дневное освещение в Яме",
+    "What time is it?": "Который час?",
+    "Dark Night": "Тёмная ночь",
+    "Dimly lit Night": "Слабо освещённая ночь",
+    "Morning": "Утро",
+    "Evening": "Вечер",
+    "10 am - 11:30 am": "10:00–11:30",
+    "11:30 am - 12:30 pm": "11:30–12:30",
+    "12:30pm - 2:00 pm": "12:30–14:00",
+    "Stair level in the Corpselight Well": "Уровень лестницы в Колодце мертвенного света",
+    "What level to show?": "Какой уровень показать?",
+    "Top of the Well": "Верх колодца",
+    "Midway down the Well": "Середина колодца",
+    "Bottom of the Well": "Дно колодца",
+    "The Skull Through": "Костяная канава",
+    "Select a token on the scene, then a skull in the macro": "Выберите токен на сцене, затем череп в окне макроса",
+    "Reset all skull rotations": "Вернуть все черепа в исходное положение",
+    "Whistlefang Lair West Circle": "Западный круг логова Свистоклыков",
+    "Whistlefang Lair East Circle": "Восточный круг логова Свистоклыков",
+    "Shrine of the Sandpoint Devil North Circle": "Северный круг святилища Сэндпойнтского Дьявола",
+    "Shrine of the Sandpoint Devil South Circle": "Южный круг святилища Сэндпойнтского Дьявола",
+    "The Cloneworks Circle": "Круг Клонария",
+    "The Devil's Sanctum Circle": "Круг Святилища Дьявола",
+    "Liralarue’s Clockworks West Circle": "Западный круг часовых механизмов Лираларю",
+    "Liralarue’s Clockworks East Circle": "Восточный круг часовых механизмов Лираларю",
+    "The Temple of Kabriri Circle": "Круг храма Кабрири",
+    "Forgotten Light Circle": "Круг Забытого света",
+    "Previous": "Предыдущий",
+    "Next": "Следующий",
+    "Whisper to all players rather than a select few.": "Отправить всем игрокам, а не только выбранным.",
+    "Players": "Игроки",
+    "Whisper": "Отправить шёпотом",
+    "Speak Aloud Message": "Отправить текст для чтения вслух",
+    "Seven Dooms for Sandpoint Journal": "Журнал «Семь бедствий Сэндпойнта»",
+    "Please select the token that the skull turns towards": "Выберите токен, к которому поворачивается череп.",
+    "select a token that the new Intellect Devourer spawns from": "Выберите токен, из которого появляется новый пожиратель интеллекта.",
+    "No space to exit the body": "Нет места, чтобы покинуть тело.",
+    "Need to select a player's token to whisper in their ear.": "Выберите токен персонажа игрока, чтобы прошептать ему на ухо.",
+    "#1: Bones and Ashes": "#1: Кости и пепел",
+    "#2: Strange Times in Sandpoint": "#2: Странные времена в Сэндпойнте",
+    "#3: Whistles in the Dark": "#3: Свист в темноте",
+    "#4: Footprints on the Roof": "#4: Следы на крыше",
+    "#5: Shadows at Midnight": "#5: Полночные тени",
+    "#6: To Raise the Devil": "#6: Воскрешение Дьявола",
+    "#7: A Pattern of Killings": "#7: Серия убийств",
+    "#8: Where Corpselight Glows": "#8: Мертвенный свет",
+    "#9: The Red Bishop's Gift": "#9: Дар Красного Епископа",
+    "Turn Skull 4": "Повернуть череп 4",
+    "Turn Skull 1": "Повернуть череп 1",
+    "Turn Skull 2": "Повернуть череп 2",
+    "Turn Skull 5": "Повернуть череп 5",
+    "Turn Skull 6": "Повернуть череп 6",
+    "Turn Skull 3": "Повернуть череп 3",
+    "Tiluatchek": "Тилуатчек"
+  },
+  "sceneAdditions": {
+    "scenes.01M8rVosRgto12Cs.regions.CSFhU5YgVDo6RI8m.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.01M8rVosRgto12Cs.regions.CSFhU5YgVDo6RI8m.behaviors.fd1WOq3AShR5ud82.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.I2GSRKbyg2ggCPYZ.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.I2GSRKbyg2ggCPYZ.behaviors.lbTW92Ue3OsNOPzw.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.MlGdtCPOEtGkClEv.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.MlGdtCPOEtGkClEv.behaviors.ayNDAvSV4djvC6OV.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.4q52b86uZrxFxiy5.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.4q52b86uZrxFxiy5.behaviors.9u2s5waNtS1xR3Um.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.1wEEcbH4T0Ddeeij.name": {
+      "source": "Region (4)",
+      "translation": "Область (4)"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.1wEEcbH4T0Ddeeij.behaviors.zEIld52iSGNESChQ.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.IYyUQgUzhoz66eoo.name": {
+      "source": "Region (5)",
+      "translation": "Область (5)"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.bsT8ksAkDKkMd1Fa.name": {
+      "source": "Region (6)",
+      "translation": "Область (6)"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.bsT8ksAkDKkMd1Fa.behaviors.aRr6FiuWGRah04p4.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.qQMwRF3NxgNvgl9C.name": {
+      "source": "Region (7)",
+      "translation": "Область (7)"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.qQMwRF3NxgNvgl9C.behaviors.ftpBSTTSvbp8R32H.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.8yutXrPOhWgGiu3p.name": {
+      "source": "Region (8)",
+      "translation": "Область (8)"
+    },
+    "scenes.1PEIcYeSM9xLyfsp.regions.8yutXrPOhWgGiu3p.behaviors.v5hG2HNqLhDAE2t3.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.STEBYrgSTxxGvuXj.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.STEBYrgSTxxGvuXj.behaviors.QWYYJwZGbqTqzjmV.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.CDQGqeSbRVNWsJBi.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.CDQGqeSbRVNWsJBi.behaviors.JyOHxyvkEEmRc1Hg.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.gjU91hYaQg4ipLoi.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.gjU91hYaQg4ipLoi.behaviors.Tfxi5ZlskR6jGnfT.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.tx7chNgQ4KFovhaj.name": {
+      "source": "Region (8)",
+      "translation": "Область (8)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.EVCEnHYgYacxN8Hf.name": {
+      "source": "Region (9)",
+      "translation": "Область (9)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.EVCEnHYgYacxN8Hf.behaviors.B0uapGJCfIfGMwkg.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.XB99YIknKcFEBpUm.name": {
+      "source": "Region (10)",
+      "translation": "Область (10)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.sZzux16WMny8Ylqw.name": {
+      "source": "Region (11)",
+      "translation": "Область (11)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.sZzux16WMny8Ylqw.behaviors.2RMcLibiTOFUZKTy.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.tlyXk1k5PH1FKQWY.name": {
+      "source": "Region (12)",
+      "translation": "Область (12)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.tlyXk1k5PH1FKQWY.behaviors.L7WnmE2ELc66Z5G2.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.AUoDU7zltNlBcHg7.name": {
+      "source": "Region (13)",
+      "translation": "Область (13)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.fjM8zxNmWWP4VYtK.name": {
+      "source": "Region (4)",
+      "translation": "Область (4)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.fjM8zxNmWWP4VYtK.behaviors.enFQWSjzRFalZDuR.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.VETCKpM5hY9IZblB.name": {
+      "source": "Region (5)",
+      "translation": "Область (5)"
+    },
+    "scenes.Cy6gQ07wWFOm8mkz.regions.VETCKpM5hY9IZblB.behaviors.O0LU1wxgEuJseCNv.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.PgSEZn1dnXe89e7R.name": {
+      "source": "Region (6)",
+      "translation": "Область (6)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.73HBdW2Ky7Fa4GyB.name": {
+      "source": "Region (7)",
+      "translation": "Область (7)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.73HBdW2Ky7Fa4GyB.behaviors.WFtjALmxX2S8kS3H.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.l2v7cdZqUvVpBWIR.name": {
+      "source": "Region (8)",
+      "translation": "Область (8)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.TY69i3NecPIQhhsL.name": {
+      "source": "Region (9)",
+      "translation": "Область (9)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.TY69i3NecPIQhhsL.behaviors.cNFZwdqWCo5lwRaE.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.XUm265y6eHoCokB9.name": {
+      "source": "Region (10)",
+      "translation": "Область (10)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.1ejAcBQ1v41FuzVC.name": {
+      "source": "Region (11)",
+      "translation": "Область (11)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.1ejAcBQ1v41FuzVC.behaviors.ChJ8MqlOk0I4q1Nd.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.eAFhYdzAIFmJJG7I.name": {
+      "source": "Region (12)",
+      "translation": "Область (12)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.eAFhYdzAIFmJJG7I.behaviors.K0yORa0HZl3nteal.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.hqFn4V8d0azaoO25.name": {
+      "source": "Region (13)",
+      "translation": "Область (13)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.hqFn4V8d0azaoO25.behaviors.QFxC5FVW5CUqLBG3.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.iher7l2ogvOXjdNr.name": {
+      "source": "Region (18)",
+      "translation": "Область (18)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.Kdf4JdFMylTCVD6Z.name": {
+      "source": "Region (19)",
+      "translation": "Область (19)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.Kdf4JdFMylTCVD6Z.behaviors.svIrYK3ZBzZj0FKE.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.kxe8Aj9OICanhr53.name": {
+      "source": "Region (20)",
+      "translation": "Область (20)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.l9U7CW4afb9NUi9q.name": {
+      "source": "Region (21)",
+      "translation": "Область (21)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.l9U7CW4afb9NUi9q.behaviors.RQ018Km9EsbfErQU.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.0kAx21VGtbLXCMmn.name": {
+      "source": "Region (22)",
+      "translation": "Область (22)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.0kAx21VGtbLXCMmn.behaviors.h2sesLqozpKrygZU.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.XrMqzQxdoMaDkh29.name": {
+      "source": "Region (23)",
+      "translation": "Область (23)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.BZGdFuIkTwHfCP1A.name": {
+      "source": "Region (24)",
+      "translation": "Область (24)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.BZGdFuIkTwHfCP1A.behaviors.nOUMMcmBQHjY87OT.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.TyMNMalauuCF3NCh.name": {
+      "source": "Region (25)",
+      "translation": "Область (25)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.PON82LsUXUCWcmm9.name": {
+      "source": "Region (26)",
+      "translation": "Область (26)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.PON82LsUXUCWcmm9.behaviors.xi5PwPwMDjZXNGG1.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.yIzkwayF5DE3CtnH.name": {
+      "source": "Region (27)",
+      "translation": "Область (27)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.WRohjPL6zjr4pEu2.name": {
+      "source": "Region (28)",
+      "translation": "Область (28)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.WRohjPL6zjr4pEu2.behaviors.OSD0zFBocgqBLc0p.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.1bknOkLC2whDAAPa.name": {
+      "source": "Region (29)",
+      "translation": "Область (29)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.1bknOkLC2whDAAPa.behaviors.6oygu791SWjSxZhs.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.p6LkPIOZew4HkiTP.name": {
+      "source": "Region (30)",
+      "translation": "Область (30)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.p6LkPIOZew4HkiTP.behaviors.ZHtelJdwP6noRFPh.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.NSKdwQnmq5ZHV1Og.name": {
+      "source": "Region (31)",
+      "translation": "Область (31)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.Py5qIYoTHqsNnmoJ.name": {
+      "source": "Region (32)",
+      "translation": "Область (32)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.Py5qIYoTHqsNnmoJ.behaviors.FqHP5wBggMjfQqAZ.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.KsQmnkMJBHAkJkmt.name": {
+      "source": "Region (33)",
+      "translation": "Область (33)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.KVf2eqvXX1RWEno3.name": {
+      "source": "Region (34)",
+      "translation": "Область (34)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.KVf2eqvXX1RWEno3.behaviors.YTmoW8Fp6hZFwvwG.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.nF5q0WngI89oTAXL.name": {
+      "source": "Region (35)",
+      "translation": "Область (35)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.G2RbGaTP4Ess0uFt.name": {
+      "source": "Region (36)",
+      "translation": "Область (36)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.iXFzgVcoztq7M0pr.name": {
+      "source": "Region (37)",
+      "translation": "Область (37)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.iXFzgVcoztq7M0pr.behaviors.cVFd0umca5BfIqmG.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.lfOLgkV8a1d20Jvk.name": {
+      "source": "Region (38)",
+      "translation": "Область (38)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.lfOLgkV8a1d20Jvk.behaviors.0AI3aFdX9J2mPT6K.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.LZnRHhgDK6onA54o.name": {
+      "source": "Region (39)",
+      "translation": "Область (39)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.LZnRHhgDK6onA54o.behaviors.tKmOGrKhi5mndYtW.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.EsLbDRYVW3l3J0X2.name": {
+      "source": "Region (40)",
+      "translation": "Область (40)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.V33HQyLv89PapCjK.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.nMOUW6ky0qfLWna6.name": {
+      "source": "Region (4)",
+      "translation": "Область (4)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.nMOUW6ky0qfLWna6.behaviors.othA4YdOfy6gWbad.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.t9g57vLVYlDhZFiv.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.t9g57vLVYlDhZFiv.behaviors.sIHmxDVbkvF6cgdw.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.UkETcojSxYwrYJIU.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.UkETcojSxYwrYJIU.behaviors.rEVLKY1qix7Ox6nk.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.pNu6udtSd2IZDipt.name": {
+      "source": "Region (5)",
+      "translation": "Область (5)"
+    },
+    "scenes.RyXnHfDnoz6e3M5G.regions.pNu6udtSd2IZDipt.behaviors.JmD1IZ84glJ9xgQR.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.CC2vJaOJ3uV2CVWq.text": {
+      "source": "Sandpoint ⦿",
+      "translation": "Сэндпойнт ⦿"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.0Qsav6qwTPZUbJsq.text": {
+      "source": "The Old Light •",
+      "translation": "Старый Свет •"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.SS4ohfcZh4FG7iax.text": {
+      "source": "Ashen Moor",
+      "translation": "Пепельная пустошь"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.DUZgSfJu93sKG8E4.text": {
+      "source": "Devil’s Platter",
+      "translation": "Плато Дьявола"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.JBTW6BEjZOBaA4EY.text": {
+      "source": "Mosswood",
+      "translation": "Мшистый лес"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.pamnbQp0PBYuIOR8.text": {
+      "source": "Nettlewood",
+      "translation": "Крапивный лес"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.24GTp96C95CaX1JY.text": {
+      "source": "Sog’s Bay",
+      "translation": "Залив Сога"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.O3FOLe1Uek3M2wfg.text": {
+      "source": "Brinestump Marsh",
+      "translation": "Болото Солёных Пней"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.VeUBDIC7tzHXY0IA.text": {
+      "source": "Ashen Rise",
+      "translation": "Пепельная возвышенность"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.ElnfvxWmZtxLUn2U.text": {
+      "source": "Bleaklow Moor",
+      "translation": "Мрачная пустошь"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.oOnGX6Th6oK5i1ia.text": {
+      "source": "Whisperwood Moor",
+      "translation": "Пустошь Шепчущего леса"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.ViW4TUhCrtl4nYUD.text": {
+      "source": "Farmlands",
+      "translation": "Поля"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.8ft4vgZW3OxC29hr.text": {
+      "source": "Foxglove Bluff",
+      "translation": "Утёс Фоксглава"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.MAI2iipKS2X7FSyk.text": {
+      "source": "Hag’s Plummet",
+      "translation": "Обрыв Карги"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.YxFRFK6fzokkiYiq.text": {
+      "source": "Dragon’s Punchbowl",
+      "translation": "Драконья Чаша"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.1fPgCz5TYxGZxOYm.text": {
+      "source": "The Three Cormorants",
+      "translation": "Три Баклана"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.JwoPnoTSq1BaEOd2.text": {
+      "source": "Shank’s Wood",
+      "translation": "Лес Шанка"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.khqhlzi4Lz0NQYXa.text": {
+      "source": "Tickwood",
+      "translation": "Клещевой лес"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.PijPdqGb4s1cafJG.text": {
+      "source": "• The Pit",
+      "translation": "• Яма"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.FWdzUTY8Pxv2JkXW.text": {
+      "source": "Thistletop •",
+      "translation": "Чертополоховая Скала •"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.6KOKM1u1xlxQd3oP.text": {
+      "source": "Pauper’s Graves",
+      "translation": "Могилы бедняков"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.4070vychmXOX2P3N.text": {
+      "source": "Leb’s Tors",
+      "translation": "Скалы Леба"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.UUEkpo5aG0OoAKuk.text": {
+      "source": "Rigg’s Tors",
+      "translation": "Скалы Ригга"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.BTHsThPQp8I5P7CQ.text": {
+      "source": "Task’s Tors",
+      "translation": "Скалы Таска"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.hbmnls0I1p02b9sm.text": {
+      "source": "• Biston’s Pond",
+      "translation": "• Пруд Бистона"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.r4QEoc81NZ4wxSC7.text": {
+      "source": "• Wisher’s Well",
+      "translation": "• Колодец Желаний"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.SHKdtq2f8ban5OPX.text": {
+      "source": "• Habe’s Sanatorium",
+      "translation": "• Санаторий Хэйба"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.liNnc852wnfE3FV0.text": {
+      "source": "Soggy River",
+      "translation": "Сырая река"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.8XF6xhLH3mUgDuWu.text": {
+      "source": "Foxglove River",
+      "translation": "Река Фоксглав"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.zimgMbgpV6g26wOf.text": {
+      "source": "Weasel Creek",
+      "translation": "Ласковый ручей"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.aGddn5XS6CLRbqJQ.text": {
+      "source": "Cougar Creek",
+      "translation": "Пумий ручей"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.m47fxJaY5gpPQYJY.text": {
+      "source": "Turandarok River",
+      "translation": "Река Турандарок"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.oUpxk9uS8rv6urHn.text": {
+      "source": "The Pyre",
+      "translation": "Погребальный костёр"
+    },
+    "scenes.Skfx8qUPYDFZTlX1.drawings.A5rzzOEEQ5rNZT0S.text": {
+      "source": "Thistle River",
+      "translation": "Чертополоховая река"
+    },
+    "scenes.nVyk5okAb1ofC7HN.regions.aGcXE2c7MwmPCidR.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.nVyk5okAb1ofC7HN.regions.V40dCNjJ6Ev7QWmG.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.nVyk5okAb1ofC7HN.regions.V40dCNjJ6Ev7QWmG.behaviors.Xv1P5oGKjIlvGNRp.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.nVyk5okAb1ofC7HN.regions.RRCMl3fF0kkdsiVU.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.nVyk5okAb1ofC7HN.regions.RRCMl3fF0kkdsiVU.behaviors.wndEDmfhCFkvvT2p.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.nVyk5okAb1ofC7HN.regions.1Ut2mf4Np8UxBMGq.name": {
+      "source": "Region (4)",
+      "translation": "Область (4)"
+    },
+    "scenes.nVyk5okAb1ofC7HN.regions.1Ut2mf4Np8UxBMGq.behaviors.mI3yEDAac26BPGYw.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.rHVo98ZmD8zjjohv.regions.SntpvE5haMqbXEzW.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.rHVo98ZmD8zjjohv.regions.vYUeebk3AEesi1qI.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.rHVo98ZmD8zjjohv.regions.vYUeebk3AEesi1qI.behaviors.rOHi83CQZ9De8VXH.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.rHVo98ZmD8zjjohv.regions.ES18CEUhHrJw4evY.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.rHVo98ZmD8zjjohv.regions.F8kIQOTEPc9rI3UW.name": {
+      "source": "Region (4)",
+      "translation": "Область (4)"
+    },
+    "scenes.rHVo98ZmD8zjjohv.regions.F8kIQOTEPc9rI3UW.behaviors.kdBn2iSY8cWkPFuh.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.J5KXVNEjPR5HCvMA.text": {
+      "source": "Wet Dog Alley",
+      "translation": "пер. Мокрой Собаки"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.YRMd8IBsxrPAF10B.text": {
+      "source": "Sandpoint Harbor",
+      "translation": "Гавань Сэндпойнта"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.vlIIoryBUKvN2nfA.text": {
+      "source": "Boggy Creek",
+      "translation": "Топкий ручей"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.FIwUgs3YbZXu3v9L.text": {
+      "source": "Sandpoint Bridge",
+      "translation": "Мост Сэндпойнта"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.alZF8vAwAjBCfxkW.text": {
+      "source": "Rum Street",
+      "translation": "Ромовая ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.WGRPVOXm9lwBzGpz.text": {
+      "source": "Whisker St.",
+      "translation": "Усовая ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.mluNtPJ0Vzaf08f7.text": {
+      "source": "Hook St.",
+      "translation": "Крюковая ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.q0cQRBt4g7JRqzm8.text": {
+      "source": "Turandarok River",
+      "translation": "Река Турандарок"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.eWF0kah8dIsnat2b.text": {
+      "source": "Razor St.",
+      "translation": "ул. Бритвы"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.Hdh1r1Z39uUuEeKH.text": {
+      "source": "Razor Alley",
+      "translation": "пер. Бритвы"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.WXVjukXNIy1sO8kN.text": {
+      "source": "Brokestone Alley",
+      "translation": "пер. Битого Камня"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.pD0eKRsnOVDqeCwI.text": {
+      "source": "Mud Ln.",
+      "translation": "Грязевой проезд"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.suxVJNtLiQJKoPpZ.text": {
+      "source": "Shark Alley",
+      "translation": "Акулий пер."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.xuEpbDE75igBoXKD.text": {
+      "source": "Mud Street",
+      "translation": "Грязная ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.bnnismMg37Yf47WI.text": {
+      "source": "Fox St.",
+      "translation": "Лисья ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.pI4Syrx5HXdH1DgQ.text": {
+      "source": "Net St.",
+      "translation": "ул. Сетей"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.XLEs16sEFS9djLoa.text": {
+      "source": "Cog St.",
+      "translation": "ул. Шестерёнок"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.d26qa8nYw9EMQhUe.text": {
+      "source": "Bishop Street",
+      "translation": "ул. Епископа"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.KYPdw0TlvcWk5gey.text": {
+      "source": "Chopper’s Alley",
+      "translation": "пер. Тесака"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.N4JjPPYhA09geEuA.text": {
+      "source": "Crab Street",
+      "translation": "Крабовая ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.1qGzmkkUeqfAbyld.text": {
+      "source": "Tanner’s Bridge",
+      "translation": "Мост Кожевника"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.Nnk4QsVyGO51DHl7.text": {
+      "source": "Gaffer’s Walk",
+      "translation": "Тропа Старика"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.eJze1b6ODQ13rDg2.text": {
+      "source": "Gull St.",
+      "translation": "ул. Чаек"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.SRPELmWvG1DUo6u6.text": {
+      "source": "Sand St.",
+      "translation": "ул. Песка"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.ReWYmjSgLhuUfuFZ.text": {
+      "source": "Bent St.",
+      "translation": "Кривая ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.yTfqHKI38gxHZdcs.text": {
+      "source": "Drunkard ’s Walk",
+      "translation": "Тропа Пьяницы"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.bhr3gKnPohrl3uuh.text": {
+      "source": "Rat Alley",
+      "translation": "Крысиный пер."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.8E0LuYfZIntzvcqQ.text": {
+      "source": "Frog Alley",
+      "translation": "Лягушачий пер."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.uSU0PXsNx6XYJHRd.text": {
+      "source": "Rusty Nail Alley",
+      "translation": "пер. Ржавого Гвоздя"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.nbCqP2KRJcgDoyQl.text": {
+      "source": "High Street",
+      "translation": "Главная ул."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.uzzuiA722YgTHikw.text": {
+      "source": "Shell Street",
+      "translation": "ул. Ракушек"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.FpVYACf9aIdAzQSR.text": {
+      "source": "Junker’s Way",
+      "translation": "Путь Хлама"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.p1rjOF9hsuC9IjxW.text": {
+      "source": "Soggy Alley",
+      "translation": "Сырой пер."
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.Sg8RtDbSsNGJ63uh.text": {
+      "source": "Cliff Street",
+      "translation": "ул. Утёса"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.UYczadisaO9tl8Zd.text": {
+      "source": "Junk Beach",
+      "translation": "Пляж Хлама"
+    },
+    "scenes.sbaOqnb66Kl6iUg5.drawings.IUkbAnpGoE8cUhHN.text": {
+      "source": "Northgate",
+      "translation": "Северные ворота"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.J1LmqgFLkw70fHTy.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.J1LmqgFLkw70fHTy.behaviors.OHhT9aDs6zQCfLFi.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.ZlpHZ2k9SPXUWTRL.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.jdXUP0MMhqiju4ZB.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.jdXUP0MMhqiju4ZB.behaviors.gk4nwgxftlnDjEGi.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.bIQlZ6udXXLWcFml.name": {
+      "source": "Region (4)",
+      "translation": "Область (4)"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.N8ZKjsopPGGfZWI5.name": {
+      "source": "Region (5)",
+      "translation": "Область (5)"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.N8ZKjsopPGGfZWI5.behaviors.AoFOv19PzpRgWtqV.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.gfbeegECnfmDMW5K.name": {
+      "source": "Region (6)",
+      "translation": "Область (6)"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.tgSPcYEDevU5q4Fp.name": {
+      "source": "Region (7)",
+      "translation": "Область (7)"
+    },
+    "scenes.v7U9I25i3wREhQBm.regions.tgSPcYEDevU5q4Fp.behaviors.w9bQigXSb6t5EC42.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.uHIadC815F3nNuU1.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.uHIadC815F3nNuU1.behaviors.noZK8az2Re3bw6Es.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.RrIn3cYw4VyGrhMH.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.RrIn3cYw4VyGrhMH.behaviors.BiyFM4yV25PHf2AI.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.VW69a1tbNQDmndET.name": {
+      "source": "Region (5)",
+      "translation": "Область (5)"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.VW69a1tbNQDmndET.behaviors.G6PddWkugwqZtA0I.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.Ck8OpynIbY3Ama5I.name": {
+      "source": "Region (6)",
+      "translation": "Область (6)"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.6sbsBN9NzdRv4S2l.name": {
+      "source": "Region (7)",
+      "translation": "Область (7)"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.6sbsBN9NzdRv4S2l.behaviors.SxNAPa3fSfexlKrw.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.z9g1jetua7I31u4l.regions.44YGOy8xtO7ShlSH.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.hwLImAzLYdl67KuR.name": {
+      "source": "Region",
+      "translation": "Область"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.hwLImAzLYdl67KuR.behaviors.7jiXD3TYH1unjfN2.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.1GVUzXsNKCJSnRnh.name": {
+      "source": "Region (2)",
+      "translation": "Область (2)"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.1GVUzXsNKCJSnRnh.behaviors.lDRAQiJJRwVicEHe.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.r8NKFoSO1uPEMJnZ.name": {
+      "source": "Region (3)",
+      "translation": "Область (3)"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.r8NKFoSO1uPEMJnZ.behaviors.wnw4HVk8tz2zWS9n.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.k27Xk85FWoS7t2Tt.name": {
+      "source": "Region (4)",
+      "translation": "Область (4)"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.k27Xk85FWoS7t2Tt.behaviors.Tso1PHSatD2g7FWE.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.X8N1GC9ioAxtqKdx.name": {
+      "source": "Region (5)",
+      "translation": "Область (5)"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.NJiwkefnbTxnKRPW.name": {
+      "source": "Region (6)",
+      "translation": "Область (6)"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.NJiwkefnbTxnKRPW.behaviors.ClCMRCiqtW5ZRI3F.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.HzlDjJMfVRlC1zVH.name": {
+      "source": "Region (7)",
+      "translation": "Область (7)"
+    },
+    "scenes.zKVyZcQFwXIQoXBq.regions.HzlDjJMfVRlC1zVH.behaviors.AkmA4w9kqz3tVOGW.name": {
+      "source": "Teleport Token",
+      "translation": "Телепортировать токен"
+    }
+  },
+  "macroCommandHashes": {
+    "0XEjk1uinVIhhX5e": "cdbb807dbb2d0823bdbaf01201f247a3b2a20b0f3c6f0cc94954991d64453ab0",
+    "1dKCgaSSWbuxPnxh": "06f57b9968d11f738f712021efcd054a8cbb5f56ab627b2c332ea641b2bccb13",
+    "29mE4RRhE7qbL516": "04443b14b0f40c2b149b972a526377d2cd24c91d2528e6764e808e35fab9cf78",
+    "4Am3yAjO5HPL1DnN": "b79e8914f84dc9e7c3c395c901583ef94b5a663539036c5f60c1cb4b229fdda6",
+    "4XDQ731KjXFFuD5E": "ee9885a879a90cebc570344aa1ea4f6f9099779c0cd2e44d7176283dbaf940b2",
+    "51urfeiBCccYKlXO": "bbeec6967b636e882e5d227f3a43dc7dad594681bd98107f74e5c96863e29a52",
+    "5kPRSMMY3lE7lHPn": "20d20b7023298170b0a7add811b0efc8cdc1d0775e2cfc7b8af275ea4e74354f",
+    "7uF2VXxl8TtWciD4": "bf3c9bfe0266ca38a57326dfcfad624026a9fb385b2e229e3b4652166a413051",
+    "8DgBoqrrAOFn46Wa": "0ac0f6af0d85a32251bb5a00b23286ce99b838d5ac52796f7885d90d61a0ccbe",
+    "8OCnWZ4oXXvAOLpi": "a0ef501d4c5236fb616aa3495ab70fbf8399383e13e4d36890b8f8f20b1ed587",
+    "93gH7y9HmZ1LIcRy": "690f18b2f93f632db88019c3f0a292f3ca198fafd95be07eec54205faad18a64",
+    "A55Q2Ubel6Nzb61J": "5caf3d2f937f443fa5a31d530bc5adeab5c6d114015600e6e3da1e196bbbe3ec",
+    "B79GgthfaJuxiqHY": "d3a3593c5a70ed6817d28eea7b89bf18dbd8523a1699df371b257f4a04d45fbd",
+    "BDsd1CsacMfT7hMu": "be2380947f408fa4063209059d97568460fbd9aa940c28b9c89149edc0447b3b",
+    "BGVqOgLrHY1RUdAM": "2e7773c79600be883820d2f35815d7c802f7ca63f7c6ecc32401d417d1644c45",
+    "BaaM1NV9dgSue7Wm": "9b51ed988bffdaf1df32c28eea5b8d44287da315d44c1167f10613eba86a7a50",
+    "CfMRwOen6MPNt0Gv": "99a0504b471e80abe543f2cbfdb4ee62f60e121983e02842a8226816e8152e1b",
+    "CokxVCmfub0QK5FX": "f68772235e100a407efb14ceccaf35a30a77df156d9616da693fde858c3394cd",
+    "DNSK5iepzczNFW4E": "539bf2f8ee0f50fe9bd5f416cb5a1eabc4f9fb2227da13c60dd2cf7a007551a6",
+    "E8jlxNJUc6mBJfWT": "0c3e1f14a716f968bc8ba6b98f17127f5ef0217de55a01d93bde8ba04de13793",
+    "IAbHmD5h2cGMavRN": "e27a6987230c6a429b0d810b045365d082a3ecec07d8ccadc54f6bc7334374e2",
+    "JVWTnUOXWJ1e07BO": "8eace73c7b51c59c07e42a5cff634a8944b901da9e227036e2c484a1b1b94c60",
+    "Jhd3Kfv0oujMKu3m": "3b66fddc349640a30db673ff1eada24cac10bc6b7707c03289f2f78bd4fcc7e4",
+    "KBERnWvJlgJZoTTt": "f903f52c45cfe4fbe840cb96db71e641bc67f9b3d8f1964391606c9f64b0fbe1",
+    "LH2wye5svuf1iIza": "e1a897a25dda20af00eabcfdd837c2254552479dd954b840fcff301740df8448",
+    "M0Y1a9QdaBsJ8kmL": "22bda4aaf065cc08dc2a2ec636c02f05f93f12e310fa37f4e94025a5b7dc713f",
+    "N93xcQflI3GEQxMB": "fd192e0921a8616c7d12f10438fac29c0242bca0e377e43b91299e6c390e074d",
+    "Nvj81l17o3oFOQGN": "f14f0b7c1abaea60af858df1955bf82f96cd839ba61fd683faa3ddc897ee0768",
+    "R0Ct0YjUgQ6AZ2qL": "03cc1e06366bc8b24a5b2259bb64833437c8e671a2e90973e2e64c91d677c287",
+    "RVcVoYFHTtj6ECVe": "d4cdba1f5be0e0e17841ccaae7160252fe31ad8443a463c4bffd0ecef95612a5",
+    "ShayrDjQsCepwTWa": "a850aa36b167005a03fc5ab0eb55b8c85783472b259738aa4684f6d019248a14",
+    "TAScdjWHII5sQXZ7": "204a1e159e1085192319e4f68e3f22ae15bd74c517f6b8e342756c3fb5706783",
+    "TCRgeU2GJUDWcW1V": "5d17ccb0502c0a3181a12ae39042b329972429be3d360a7cc7344c1e4ce77477",
+    "UecffTrZZPC01bjo": "e533f37f612b92a939a7ede4ddb8f734f86d7ffb9696c809f91621ac297194f1",
+    "W4uW8TBUFyfiabR7": "3bd8e15334b3096fd5b7d3d264573e2bd5b6febace9277e89aea239be9ae7a15",
+    "XRJbfzDZAr4aX6s0": "f8de67f74a8a148d2048f0a734fed8ffc21d72ad9bc4e1f098e39e3d1dd331e1",
+    "Zq3lW1BoPLzWV4ND": "45c0510c7c15fab5472a65b3804aa6acbe3223e22412eedc48f3bfbe42fffbd4",
+    "ZrvsQN9ZKe2CkV0w": "0c43deb726daf756ff8982251e97a655cc09358917c9d62de58a76dfdd1429cc",
+    "aZxRAhA0QTh7EJZv": "edb55fdee54a801de5a60231732c5aa816467af41b2475a6e69c00b6b0a4b5ee",
+    "bS19AXv8yvmzi9y7": "46f95aaf1f8b2fc23ae0090727983c979b2046e4805638881ef3fd09a86e87a7",
+    "cqllDEVDeAGg41fV": "f7a76f47854cc4954d7e70a02c9d95052056461fe741016ccada8d1db8607fcc",
+    "e0g58lMrkTszilLw": "e381f7b3bfb49853fbdb1c9065a2a241feb94eb0c5bc56c34b4023cade251bb1",
+    "ePKb92DzqNvlGcIA": "e4d40487eaf9f6a5f0c8e3061f15f7280c59e59af18940579d017b3453756d71",
+    "eQjiiqC0kkHd9SdK": "9d277744c047fecb1731330af0367c9ad241e78794c6a60fecf90ed53ccab239",
+    "eWK3gw1JRqmeBSss": "e77cac4a525bc47bb12e13d358073a63fdb7c0a5e2fac11f116aabe8dd4a9d37",
+    "euFrgLqeCfBAuX1K": "10a388caeed979086befba9fa09ef06f4ef938277889ff655a984c93352f912c",
+    "eyt1oCMhLpu47M7X": "740bc81fea2f04e7363c0c427925a5de36bccd05871700377f17f3c5c54aea24",
+    "fhtjG1AA8DXLQRxN": "a563f4db7beca84c7434b2dac05e2bdb2b8792ab4c9a051a95f4f1744bbb5d98",
+    "fmSptdTfFKoezzqU": "97e92e777844eada53497a8528b4e7ea59527810d3a052cb9c2fac1db5139a59",
+    "kdzEHcT19xzID02J": "e38c5a72bd3da9d8e734e5b44888377877dc45427aa29dc5f31ce428e16987f3",
+    "kplP73ZfejkOjKS5": "18495bf2382ebd90ad5973f4d826c24e7dc6462cee6af830b16d71253c29ab15",
+    "mDgEKphjo1lB8UeY": "509b31b1dd106a879379f650421616a44a139b7f0e3bfd694f5a25d2a71f5f8d",
+    "nESNaWzxua96ZpvM": "880ef3a25596fc480800ee6aa3228def740d154e8cbada54decb2eb2dd47a05e",
+    "nIJ2lOybGDr9as7K": "57d4ff9bc8943a1d0f675d2ec9750f48116be1bf38e357c9afb1f514336a8274",
+    "nZgfThO2YLEe7tnl": "4896c5efabcb8cf48d3f16327587af550994387bda186c588a7490c2c6946dbc",
+    "oWRjNi4TJMvRlv7Z": "a054295e25e1200cd8ac47bb19a74059492a96ead94833c4bb7b21c4e58116d5",
+    "ooP4tgMFHOjPm1XU": "85eb623d0047859b454171d6434e12c60e09de05f9635dbd1951b000ab21115e",
+    "p2KtsNwvqGuLjciw": "323afe99b258f89baf1afd8191719d2690b77de575b88a846fce83e212ab6eac",
+    "q9XySeAD6yN9U2gh": "49674b1a7a12e66b808a1aad98dca2fa159e9256d21a3ff42cf3eb61fd2ae85f",
+    "qlPOXVWcG4MzTL0M": "c9dc23d2bf5b47140fafca6470bddcb42521b2e4b63145cfd3a34020623e0bf9",
+    "r6Qmo5D2JM0sTqq1": "9b30d4231dd8ac2816951a38ac33ae39ccfd6c21153a142122519abd47a53358",
+    "tZl8jUju7xIJDxty": "58e4666a88441a8f9490ebe68640c0b0fa5c3b12a91f22acd4695724637f6cef",
+    "uHXIEXJ2VRJALTwI": "353a401315b98f41aeeaf65872d989245c4c59b4581545a3961b3a54f3782211",
+    "yiIeFyRhRYwwN2np": "16182fb0f069efd080f225475bba116c69031c13daef0b932e6c697651eb26ef",
+    "zutpiNQWxmDGLv51": "a54837943d4a6b7285b982ac46d1bc340eec3429e71de7ec45c0df1f41742bf1"
+  },
+  "scope": {
+    "journals": [
+      "pf2ap20000frontm",
+      "pf2ap20001bonesa",
+      "pf2ap20002strang",
+      "pf2ap20003whistl",
+      "pf2ap20004footpr",
+      "pf2ap20005shadow",
+      "pf2ap20006torais",
+      "pf2ap20007apatte",
+      "pf2ap20008wherec",
+      "pf2ap20009thered",
+      "pf2ap20010contin",
+      "pf2ap20011sandpo",
+      "pf2ap20012advent",
+      "pf2ap20013handou",
+      "pf2ap20014handou",
+      "pf2ap20015handou",
+      "pf2ap20016player",
+      "pf2ap20017artgal"
+    ],
+    "actors": {
+      "0fT68CNfGQC9RMWe": "Actor.HRjk73sQR4RIOsfy",
+      "0mPzBUa0Mskh69Xs": null,
+      "0w2qSv6clpON4o4L": "Compendium.pf2e.pathfinder-bestiary-2.Actor.HNEUSYnInffvGPHK",
+      "1IwOMArUOJ0dWoXZ": null,
+      "1TTutcNr5Css0847": null,
+      "1fhtRm2XWwHNoITL": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.LKg7AOq8OsUp0Ulm",
+      "1yI2pitvuQkpOCBd": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.RRXHzISbHxLnvQ3q",
+      "2XJsGjz4SHsM0ywA": null,
+      "2a4n9yuvEJZhHHHp": null,
+      "32qoXC8ctWTdhbuQ": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.DIvrxLJQeOCACG2i",
+      "3GHzj1U3GssgwcOm": "Compendium.pf2e.pathfinder-bestiary-3.Actor.HiazGJoPkJ3gQVAO",
+      "3PPzSwFIQf4qRXqA": null,
+      "3QsGhaof4hP2sKEt": "Compendium.pf2e.pathfinder-bestiary-2.Actor.kElZCC1zMQVftoi9",
+      "3loS6wjHPGslBYjz": "Compendium.pf2e.pathfinder-bestiary-3.Actor.0A2XLkvOzDMOjC6Q",
+      "3pOarsbTVhAd3YfJ": null,
+      "4A0IaHJR19ibCS6k": null,
+      "4N4MDWWPBJC3mWqO": null,
+      "4PE5WQcxE4MeRJ8V": null,
+      "4h3eiFwHYsEGUAFL": null,
+      "4jCu5kFOwySyA600": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.ENZmtEVu84WMsiyo",
+      "4ws2PCdkV5QVEJ49": null,
+      "50YRFZlMkxGpxWd2": null,
+      "5FD5281VGllmrkwz": null,
+      "6u8Xe6WJUqvwTXeP": "Compendium.pf2e.pathfinder-bestiary.Actor.dEAneTvoPuQXZoLR",
+      "7C7Rqf8SDfcExPem": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.kSQZHMhYyK1seaU0",
+      "7MqkFlpGjExseeQN": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.NhY79A94IYUUKDgj",
+      "7PPZiCySz5jwpRnm": null,
+      "7QAwfH78sLvkhm7M": "Compendium.pf2e.pathfinder-bestiary-2.Actor.h4SZ3U9at7aT0ASv",
+      "8VIosAdYDYpZEoob": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.NpUHRQUpRJWYAtdc",
+      "8kruV77IrYll9PNm": null,
+      "9WmaE0MxIyyjzMl2": null,
+      "9fqyb1FThMCurCnH": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.vzEP8QvlJm0OZVWv",
+      "9re2xkKyxk814RKT": "Compendium.pf2e.pathfinder-bestiary-3.Actor.HhuHFmaq69ekSgEl",
+      "9utTsMGFx9dkQ8mX": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.SeLGzSRvXzRiaUGJ",
+      "9wdWqOjUDWZyRXNp": null,
+      "9xkAnftMLFZn4Akc": null,
+      "APStVdUUFqeMcpXW": null,
+      "AsZhzcLnehIiZ4HE": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.M0hm5JzkOkUCVSFL",
+      "BQpav4ZJXdtzuYF9": null,
+      "BiaERuanabQoyipb": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.tlduVEwwd5zQaGGJ",
+      "BvTbIYqklirW06fC": null,
+      "C7ogHeSQs9yPGZ6Q": "Compendium.pf2e.pathfinder-bestiary.Actor.ZXbr1ke1vF0ZFKY3",
+      "CEWwP34uXLd204Hj": "Compendium.pf2e.pathfinder-bestiary-2.Actor.TKlnOKpYJkg1dNwb",
+      "CICpDz7vemyhgV5Y": null,
+      "CILo525fbQw8b4W4": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.PmE8OOm1BnYGW8VR",
+      "CfSMrbR1zBoEtDcb": null,
+      "Df7KvAqMxaF1S38M": null,
+      "DjXmHBIRO9LaepBJ": null,
+      "E52ECiMYyL1Bab90": null,
+      "ED1E48g61I2S0IwV": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.TUJQ4TlTlwCX8YMY",
+      "EOSRY7x4mKKa9iFm": null,
+      "F1xttsCosnPPU5EU": null,
+      "FCe5VoSBvphdQdqC": null,
+      "Fx3ejsNACEvul2so": "Compendium.pf2e.hazards.Actor.0dg9YrjsDi6Ap3jF",
+      "GFHe52ANogISGEnf": null,
+      "GRHSDD6fQGazyGFW": "Compendium.pf2e.pathfinder-bestiary.Actor.Br1AtKUHe3nbzjnY",
+      "GSIERF7zy1YxcmRm": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.EVoXQv1tfMYQE72Y",
+      "GXt3hmWU6KZcIiB8": null,
+      "GgPTU5b4Qx0nPlwR": null,
+      "Gn3fJ2DGiKrt7Jhs": null,
+      "Gva6wKreBT2TuuGK": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.U77Y6dfaQb4pPNpU",
+      "HEbzIQgI8oonbGAu": null,
+      "HQq6BAVsBMguJhSB": "Compendium.pf2e.pathfinder-bestiary-2.Actor.M2BkGD9YwEmCvD9D",
+      "HRjk73sQR4RIOsfy": null,
+      "HTH5c8lddM86kcJr": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.ht4d7kCdhjnsF2CQ",
+      "HcB7ECjdbfCdnv4f": "Compendium.pf2e.pathfinder-bestiary-2.Actor.GsrqCDf0Dc9PisEt",
+      "HddbvPHH7rG4sp75": null,
+      "HiTvveiXwMnGsBzP": null,
+      "HzGXJhhflbmrVxfA": "Compendium.pf2e.pathfinder-bestiary.Actor.ePa0KmNPpR4zUPfX",
+      "INjzun1KLttAgs0P": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.sLFSXmv8NereWm15",
+      "IgmGmwXgddaBiBJq": null,
+      "Im2S1oQsSerL0H20": "Compendium.pf2e.pathfinder-bestiary-2.Actor.7UBCht1tQfeba2Ih",
+      "Isgmx66DJc0ewFkr": "Compendium.pf2e.pathfinder-bestiary-3.Actor.rVtBZrHnWM3lvSs7",
+      "IskcVPBBgHCMERf6": null,
+      "ItHCtjSM6kCpMgBD": null,
+      "IxSLdPbVVCLYkyGi": null,
+      "JYNtvJddz2aG5sBf": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.vLaHGDJu2xsqAxuq",
+      "JnXZqPxGqnbDLXfW": "Compendium.pf2e.pathfinder-bestiary.Actor.gWxpeqOQ54Jd4HTG",
+      "K7hvZokBDqu61Sws": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.KcS0KzOTJHcHfFQA",
+      "KYe1d6Q6441KKpqV": "Compendium.pf2e.pathfinder-bestiary.Actor.aeCoh4u6c5kt1iCs",
+      "KqJRFOP09U12hVeB": null,
+      "KwLMq17I3GbISuUC": null,
+      "KwPwkxi8wIqEBoox": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.SLI7mE4SLmm87ahe",
+      "LKiBeCKEGvZxqktr": null,
+      "LOxxyl8BXCRJCK7Z": null,
+      "LT64INGiW2a9gz7Z": "Compendium.pf2e.pathfinder-bestiary.Actor.XrmHgbKgcHDi4OnK",
+      "LTU4QwsWeLjdmRTg": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.pnLPdcv5ROaICESe",
+      "M5EC1QFzJMIh9EWp": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.dFox7zrpshKNny3i",
+      "M97rkto526hCC49W": null,
+      "MLsvX2POg2IllhWx": "Compendium.pf2e.pathfinder-bestiary-3.Actor.9HkUdRKoprwo27VN",
+      "MZsx9ytKHqUmJWou": null,
+      "Mw9G6WrfHosIdBxo": "Compendium.pf2e.hazards.Actor.A93flWUsot3FmC7t",
+      "NR0RWSRrPLwMDG6I": null,
+      "NwLDE9qsaSoV1v6m": null,
+      "O38jeOfXbWX1UWa4": null,
+      "OJF43wO0MmIThVxx": "Compendium.pf2e.pathfinder-bestiary-2.Actor.YFvur5htRwt9EfQs",
+      "OQ4K93zWtHoK0bWF": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.Yvz9ZflXUS0SU3fR",
+      "OUI7tt1NusRTzNBK": null,
+      "OlchZJdkz6MAxKKJ": null,
+      "OqPeRPM4fFxRKjJZ": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.QY6YXMOIbcwNNAsf",
+      "PCHMNLUIgNNAmAE0": null,
+      "PWGt8koc1NaUAq6O": "Compendium.pf2e.pathfinder-bestiary-3.Actor.XmOYhscNHFw7M2G0",
+      "Pfstq0zgvw9aUart": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.CPDU21UvJNe032TJ",
+      "QI3ZSZERAIMBg2cI": "Compendium.pf2e.pathfinder-bestiary-2.Actor.Y9SDbANT1DWI1DKU",
+      "QI7gjbDGzeJDE810": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.RM9NdjSOuLqKwWPn",
+      "QO0i5o7FHWaudobN": null,
+      "QREE5K4lqiyIeCTW": null,
+      "QtBrV0gDS1iPOQkM": null,
+      "QvegyCW7CfRUTbjp": "Compendium.pf2e.pathfinder-bestiary-3.Actor.H796hayJm3J7MYJg",
+      "R6FtguEADdmVOPl3": null,
+      "R6caSSMtmhrndXrR": "Compendium.pf2e.pathfinder-bestiary.Actor.ZsduIlmluQe4ZxFy",
+      "R8RLOp5xvY09epgu": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.iOJqWQMDoqBqmmCg",
+      "ROFyl1Gm2omKuPXR": null,
+      "RQjTRJiFU2Thuqen": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.2j2PyCu5eShIZqUQ",
+      "RRo2dn9QYRrZ9h69": null,
+      "RcS7Yac7UofNZE5N": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.xwM0EVgxGtbvPd0i",
+      "RvUoZZHTvJlQrF5F": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.PmQtJ1LBy45ulUpG",
+      "SHcROEKlEKtkKDEJ": null,
+      "SO1SVKmIf1MGZPTz": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.8GhQBUvLimGBWIej",
+      "STBQpHTM28CROf3t": null,
+      "SgsOcnK4nwGfHWxa": null,
+      "Sm9WfX5NCuFnORyc": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.DcVyPHFvzrUhC7EV",
+      "Sy3tF0v9nGwlRdXZ": null,
+      "TBGqo1MloAXwbXyF": null,
+      "TKJL85p0TCAC1cQ0": "Compendium.pf2e.pathfinder-bestiary.Actor.nFMZjWQL6pd9XdqR",
+      "TNacnADcq4dV2DTJ": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.XALtVzQ35vGHYTnk",
+      "TXOAdv79WjE1DZou": null,
+      "TkNEdb4jqFCKMSrM": null,
+      "TmLO1xzRM11n0x9m": null,
+      "Tu3fbMcuTRDKIKiT": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.6Os01sBDa1hxrZjs",
+      "UQfia3yG2cHtGsZB": null,
+      "Ub5kA5r8MuiZziQ4": null,
+      "V48YF16Fz7ky6Npt": null,
+      "V5SJbqpQDZjWPdKo": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.1G19uNYMSU79P2f9",
+      "VzKqeMY6nQwXl93O": null,
+      "VzSfMNbio4U5QLVD": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.0AZQuyXUAnVkNArl",
+      "W0TPM7srCci57XZB": null,
+      "W2lgE74jgfFhpbMj": null,
+      "W5x2hRTLXEUG29jE": null,
+      "WDoqKZhxuVjgF7kU": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.6KhRRlIrLHvNDIlN",
+      "WLu0MFrQSKVwrcun": null,
+      "WT7IgEOcR4wIoowE": null,
+      "WhMBN43BvhW39zmO": null,
+      "WtOIzZASahyT7Pf3": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.obwWQUZAdTO8fTKy",
+      "X3CbNT7z1sNW47Oj": null,
+      "XX5fAYkqViRvS9Gt": "Compendium.pf2e.pathfinder-bestiary.Actor.ePa0KmNPpR4zUPfX",
+      "Xeeztoh3yLrZWUPR": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.Lrl53bKw5Im3umUN",
+      "XlRa8hLbEHxNzUfS": "Compendium.pf2e.pathfinder-bestiary.Actor.E4ctF7Fvi3cdkgQq",
+      "Xrwz0r4y4wKiEZfr": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.HTZ1zAQlKfjV2b12",
+      "XuQSAKxTbBYP2gsm": "Compendium.pf2e.pathfinder-bestiary.Actor.ZMr28tFTA5NUcBTi",
+      "Y2MPAnJ3YzL5v9BH": "Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK",
+      "YCistsmLsndWz1D4": "Compendium.pf2e.pathfinder-bestiary-3.Actor.FOG8qK1bWVxp7vmE",
+      "YCllCQUEV89O6UZS": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.m221Ars4KPC1j7VT",
+      "ZgitrjqeDzZIgvDf": null,
+      "ZgqOnKefFyrkugPE": null,
+      "Zj4cCFHz0ghJB1Ka": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.ir0rdqJJw6dn4RHb",
+      "ZjCgZSMMJ7Wug4aY": null,
+      "ZlHLXZ97hNlh6Cmb": "Compendium.pf2e.pathfinder-bestiary-2.Actor.8WAc7n2M4Ks00yvj",
+      "ZoxOr1T9VcQofNGL": "Compendium.pf2e.pathfinder-bestiary-2.Actor.YFvur5htRwt9EfQs",
+      "ZpoIN4KWgMvNSkiw": "Compendium.pf2e.pathfinder-bestiary-3.Actor.zdJgaVe6VRSfEE1n",
+      "a1yVGnzO2qJ0lGqe": "Compendium.pf2e.pathfinder-bestiary-3.Actor.ZwtcCnW9CEs78WRC",
+      "a7NxIPxLmH4HbPRe": "Compendium.pf2e.pathfinder-bestiary.Actor.SUpy8sleRwi2Egsq",
+      "a8vYlLZmvmxhuhmy": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.acGApO7HwzXQVlTU",
+      "abBSh56KTwnv53PO": null,
+      "aqfPotnZF7LXzwso": "Compendium.pf2e.lost-omens-bestiary.Actor.10srqxC7QZy0dq2g",
+      "b4cWfz1K4SBNpfE0": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.vzEP8QvlJm0OZVWv",
+      "bCUbSjiybq9JrtNc": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.uuOCbfwxKCiiiawW",
+      "bP58AMeWPHwRQYfm": null,
+      "bWAJKcRAu6NeNEaE": "Compendium.pf2e.pathfinder-bestiary.Actor.Tpuqwt6Af29EMtqX",
+      "bZVLSpVBl9hcbDiC": null,
+      "bbPsxJzreY1MTaZp": null,
+      "bo6gpY9wwQQmVpwq": null,
+      "br6vF0vqIwOxYsuF": null,
+      "c0G1gy2B18C0YlkI": null,
+      "cQJ9YS3k02c8KBt0": null,
+      "d0GkVdCnkXeNsd3t": null,
+      "dAgKRz6HsfUtblMr": null,
+      "dLLvNrNyq46blA5R": "Compendium.pf2e.pathfinder-bestiary-3.Actor.CjAaXJDY4xpKqQEz",
+      "ecqOHEl8XRfXrQUj": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.r0iaWrjaSiCrxrMg",
+      "efDvCH10KvXKGTZq": "Compendium.pf2e.pathfinder-bestiary-2.Actor.OFHr8UhsBOOgj0ef",
+      "elZ2anBZA1SJcFEN": null,
+      "epiGV98LE0nYOvOp": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.xoh5JAue3PtjH6dS",
+      "etA2VA8ZBEZ9KUlu": null,
+      "eudfZ1BTN6AvPHGj": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.PNW9oNEgOacBTAVm",
+      "f2jCqIQI73HlmBDt": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.hp3uUqKvGfKOxFGu",
+      "fXipByb1tg2IltHv": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.54wzV6OQLqhO7Tgl",
+      "fhqQIGoxQ5ihPct6": null,
+      "fsmw9bIRT4Rdc04J": null,
+      "gE1PoKBWedqKkUaR": null,
+      "gGXawHv9m862ZMbc": "Compendium.pf2e.pathfinder-bestiary.Actor.ZsduIlmluQe4ZxFy",
+      "gQqPpWdjnm3K6y0Z": null,
+      "h5CMdADCiAtufgIu": "Compendium.pf2e.pathfinder-bestiary.Actor.4cPw8hZwW6uvyzvh",
+      "h8jrLioXgvYxD5Br": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.Pttsmgi4axxOY06h",
+      "hTGxPNxobPOnOpFP": "Compendium.pf2e.pathfinder-bestiary.Actor.aeCoh4u6c5kt1iCs",
+      "hdllF0qb42FCDZXk": null,
+      "hubQJYfNP7pXHNfP": "Actor.4N4MDWWPBJC3mWqO",
+      "hwaN9b35JprMdeEY": null,
+      "hxncLW8a85xWnOLG": "Compendium.pf2e.pathfinder-bestiary-2.Actor.OFHr8UhsBOOgj0ef",
+      "iB07fAGoCGj4UPK5": "Compendium.pf2e.pathfinder-bestiary.Actor.jGzVwekcRX5aQpbT",
+      "iMdkjtin9G7btelf": null,
+      "iimk7sPHXkpEyo5i": "Compendium.pf2e.pathfinder-bestiary.Actor.IXen98RbUlbxDWBD",
+      "iz665NKJI70x1Wye": "Compendium.pf2e.pathfinder-bestiary-3.Actor.Z5RBfl8x39uFpDUn",
+      "j4csT6ByXNxv9OuD": null,
+      "jDzf1R2CqYa2boek": null,
+      "jImEuKNqKdh4mWhT": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.icF60MINRdmMu5Li",
+      "jJYD8woG3EThbbCq": null,
+      "jZOQNsT3naTZHg5a": null,
+      "jcg93GuG5vhHjM0R": null,
+      "jk11XxbvSkFS2Ulr": null,
+      "jycRI8Ushq7UZbTd": "Compendium.pf2e.book-of-the-dead-bestiary.Actor.vaVIJeQnKFUeaC8K",
+      "k1r2LfJiLvYQ1Io1": null,
+      "kQ0DqxLPfiNGfQ3b": null,
+      "kSMe8WQRJSgvIhIg": null,
+      "kVQ53MK7hiNy06aG": null,
+      "kezJnTKAyVhKZctD": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.iLKiiMo1s5kz5vQh",
+      "kkSzLf5MSXB140xJ": null,
+      "kqLHbdoTgUsZApAq": null,
+      "lJy00Bb3xJIEmi05": "Compendium.pf2e.pathfinder-bestiary-2.Actor.W2gd0emEVbD8EGmf",
+      "lUHNoEPF8KOkjkah": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.39EWaqeCNzeAmsGd",
+      "lklzTwMocMrUPFXP": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.54wzV6OQLqhO7Tgl",
+      "luiHkNuQxW4Dm2Vp": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.nUyRfG2DlTAXFyn1",
+      "lxakK7geKCs4Ofrb": "Compendium.pf2e.pathfinder-bestiary-2.Actor.cijMuXBk8YUw2RoB",
+      "ly9nPWkz6QW5FUEz": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.sMY7hu636iKfN4Hj",
+      "mByBahYNIl7N0g0y": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.4p34LdwvJY2m3k7t",
+      "mLJKuz3MbSWRNWmO": "Compendium.pf2e.pathfinder-bestiary-3.Actor.rVtBZrHnWM3lvSs7",
+      "mh7J0er9rRWNgvlb": "Compendium.pf2e.pathfinder-bestiary-2.Actor.jCJUvzs1FaL6PAkq",
+      "miM6dakmFHddq7SC": "Compendium.pf2e.pathfinder-bestiary-2.Actor.RUdP7qWg6pnKrPnh",
+      "mtPK9vdeC2pN3veK": null,
+      "mvz8gZhzHHkzrmaf": null,
+      "n6HLojrKxdClO46s": null,
+      "n70CKIFaALU449F7": null,
+      "nADcTAmwqpYXSXvd": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.ru2uTJxf6RTUzJ1p",
+      "nJNKcEhEAHgZTXMv": null,
+      "nWR9dqrzYKFjRMaj": "Compendium.pf2e.pathfinder-bestiary-3.Actor.JkJRKxuIGJ3DOD9L",
+      "nks1j7iSq6b50qWj": null,
+      "nqZWk0SlorOV4Bqi": null,
+      "oMfeLHLsjfz0xJzl": null,
+      "oVD7PLy5m8j2sBkC": null,
+      "ohopNfwtbktpKzI1": null,
+      "ojO2XBOGU7vSeMk7": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.uW9TjCzpLESYlgVz",
+      "pL48m0SxVAZwqJbs": null,
+      "pQhyorHM61ZvwxBe": "Compendium.pf2e.pathfinder-bestiary.Actor.ePa0KmNPpR4zUPfX",
+      "qO5Roun9dXKzGhxd": null,
+      "qnIj3yG8JpG3f5Yj": null,
+      "qzCWFwuTrdT9HvdE": null,
+      "rAgfSegC16nP6PDc": null,
+      "s0sJw9wZIZ2CVUdg": null,
+      "sAlkzX6bQ6xlwRiP": null,
+      "sYm0DmnCzZ3xZlZP": "Compendium.pf2e.pathfinder-bestiary.Actor.BRo0snV2sH6TFuh6",
+      "saD1gRIddh7pXwnM": "Compendium.pf2e.pathfinder-bestiary-3.Actor.aQusm2Uh1tw00IVb",
+      "sorQg8s6on2VtsOi": null,
+      "soyxuzwHJgmaYXmF": null,
+      "t1dtZ13LktC3W50E": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.5eXjcdgKFvAsl89G",
+      "t3JGPzxrUqjUbR2m": "Compendium.pf2e.pathfinder-bestiary-2.Actor.W2gd0emEVbD8EGmf",
+      "t5oyBehxgnvzoFkw": null,
+      "tBlQQcp20sWPUt6Q": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.U77Y6dfaQb4pPNpU",
+      "tLg6A31Ze0lapqKg": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.fCPf4Vl39OxXHvCA",
+      "tjfLwDBxsefOwxQB": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.nUnZtlm7PneSF8ww",
+      "tpaasxzhYnKpLfHR": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.zrS9TBd2Tp3YIykQ",
+      "uCE2oOagFvZbzbeE": null,
+      "uDOeG6ZVEoN4MLf3": null,
+      "uNKhwAmHy3MrsuaP": null,
+      "v4ONqLlr4DL0EiDW": null,
+      "v5277fjd3AHNU1b3": null,
+      "v7eVVJwML8YJuEzE": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.FHxjkYIzoQ53mYp7",
+      "vlU08CvB7zyJFcXQ": "Compendium.pf2e.pathfinder-bestiary.Actor.4BBzo72pHOpecoIp",
+      "vmHxJ93qClHtsf6X": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.6zMzd6ICd3p1Ye4q",
+      "vn9igDx8iLmPloHj": null,
+      "w6arKUSI2NTRppJR": "Compendium.pf2e.pathfinder-bestiary.Actor.4cPw8hZwW6uvyzvh",
+      "wLbiM93K2bt3yygR": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.UqQwDPkaVhh3Ehht",
+      "wSKu8xi0vdrmnpuk": "Compendium.pf2e.pathfinder-bestiary.Actor.0rfropeocJWXC6pg",
+      "wTPpOJzQQsHCZgrE": null,
+      "wbRHwnIctrt2dFu5": null,
+      "x9xGeHnkZweeGu6k": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.EB8SG2RSeEwfrOKb",
+      "xPulk95h3GxE1eZN": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.7IvOx8nHMt8am77E",
+      "xVbDzdOmvJjxrGka": "Compendium.pf2e.seven-dooms-for-sandpoint-bestiary.Actor.RDgoqD06xZDjwPpS",
+      "y1xBl0MQPzv8Bupe": null,
+      "ysKrAbHTbvONjrq2": "Compendium.pf2e.pathfinder-bestiary.Actor.gfRXFd24U633OC9r",
+      "yyOpiwJSQG1Q45qi": null
+    },
+    "items": [
+      "0xQOVAmqAc9PMWCP",
+      "2PhfUh9riGfC6TI3",
+      "3Ke7DhoAo0j8J7zF",
+      "DikTEdz1yOxBenPN",
+      "NLtEU0GujzUVnka7",
+      "P9RsKS9jqxHOplRh",
+      "gdihYvZPnBgYxFEz",
+      "mpWr0X8RFAnuLoNw",
+      "tcj95WKkq9Dg4rlO",
+      "wtS7uPSfpHzRkp4K",
+      "xOgdnlKm9hUfy0er",
+      "xnTcOjd1JZGqA42B",
+      "yo8bojNvBHBR6G3p"
+    ],
+    "scenes": [
+      "01M8rVosRgto12Cs",
+      "1PEIcYeSM9xLyfsp",
+      "3O90ubz8iL7PB0kO",
+      "4OYNTOK5HRmcL9Fq",
+      "5Wy5oJVcoyou3EI5",
+      "9DEX0aT3MlE7pmnz",
+      "9O77EmvgWR5YnxFD",
+      "AsLaxPKurV8Bd9uJ",
+      "Cy6gQ07wWFOm8mkz",
+      "DiLJce7GFV3APPDs",
+      "KA02a1g0yIwDNWtT",
+      "NyvDBmQ4VuI41qBJ",
+      "Q2Ldjz499ztXidec",
+      "RrnDhhqKQKtDhOGk",
+      "RyXnHfDnoz6e3M5G",
+      "Skfx8qUPYDFZTlX1",
+      "VwoFsJ0S7kxoVWHV",
+      "WJuH7l0gMerLeB77",
+      "XBcZ3P1p9nPUTIBV",
+      "Xq8PVYGkGJJiWI46",
+      "aXrJ6aPACNdeVZBP",
+      "bsa0FvvQjxLbLA7B",
+      "dgcU27BOZLrjYlCC",
+      "dh1o0YXW3IwNCS8f",
+      "dkHWVzuTiXWBBwM1",
+      "g76YMfCiDi5JlWrK",
+      "gQpqM6dBAjHd1omc",
+      "hdJOpLONu4nzCTOe",
+      "hw8ezvh5d4TGzBWo",
+      "jzAqXQHadg9rrVTG",
+      "le2OtqyPCnFOB3Ph",
+      "lyG02zOxEfSqjX05",
+      "mIuHN8v3vJE4kamA",
+      "mjOdIyrnc7tVHT1F",
+      "n9Ej1PJ3D3Guesb8",
+      "nVyk5okAb1ofC7HN",
+      "o7RAbNmqKWnPZRoW",
+      "p8Uhuwox9GB3o3Xh",
+      "rHVo98ZmD8zjjohv",
+      "s5DpSRn7SILME811",
+      "sbaOqnb66Kl6iUg5",
+      "seb8iogQSkpPwtk6",
+      "v7U9I25i3wREhQBm",
+      "vaoWsXwWU0Yimxto",
+      "yGzf06AJ8PEWGNup",
+      "yPMrUdiGslVxOpWG",
+      "z9g1jetua7I31u4l",
+      "zKVyZcQFwXIQoXBq"
+    ],
+    "actorSourceAliases": {
+      "3GHzj1U3GssgwcOm": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.2ooIWWoCK1NCJKwT"
+      ],
+      "3loS6wjHPGslBYjz": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.wHtddmyDuL1l2E6I"
+      ],
+      "CEWwP34uXLd204Hj": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.Bg9QWIRHTPIsKKyy"
+      ],
+      "GRHSDD6fQGazyGFW": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.h74BX4Iw78gWewa4"
+      ],
+      "HzGXJhhflbmrVxfA": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.qyCcr32PVcnNm4Wr"
+      ],
+      "Isgmx66DJc0ewFkr": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.6UrgCT8MwC8CeGbu"
+      ],
+      "JnXZqPxGqnbDLXfW": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.AcUb8s5fiktYw8Fx"
+      ],
+      "KYe1d6Q6441KKpqV": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.cvfIkEF6xmWn2soN"
+      ],
+      "LT64INGiW2a9gz7Z": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.VotlWUsFKdOrHWF6"
+      ],
+      "MLsvX2POg2IllhWx": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.7xZDgCCOkbDAv4Sm"
+      ],
+      "PWGt8koc1NaUAq6O": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.yj2nhIS8ZsAJh2l5"
+      ],
+      "QI3ZSZERAIMBg2cI": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.r3PNRpEir4BVjnCC"
+      ],
+      "QvegyCW7CfRUTbjp": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.TbgHiHtPCK59KStC"
+      ],
+      "R6caSSMtmhrndXrR": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.uUP9MQscB0EFPptr"
+      ],
+      "TKJL85p0TCAC1cQ0": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.9YPFqikAmURwcTEO"
+      ],
+      "XX5fAYkqViRvS9Gt": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.qyCcr32PVcnNm4Wr"
+      ],
+      "XlRa8hLbEHxNzUfS": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.A4VgQIHsqJKssQOM"
+      ],
+      "ZlHLXZ97hNlh6Cmb": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.yHduMu4VBVUHnssz"
+      ],
+      "ZpoIN4KWgMvNSkiw": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.wTX5G19zieFnaHYD"
+      ],
+      "a1yVGnzO2qJ0lGqe": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.TQtISRsI3FI2ddBR"
+      ],
+      "gGXawHv9m862ZMbc": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.uUP9MQscB0EFPptr"
+      ],
+      "hTGxPNxobPOnOpFP": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.cvfIkEF6xmWn2soN"
+      ],
+      "iB07fAGoCGj4UPK5": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.sA2dFdRUwiapo69Z"
+      ],
+      "iimk7sPHXkpEyo5i": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.Iwk2qT4lVyrvoz3B"
+      ],
+      "iz665NKJI70x1Wye": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.jWsHDhzrIOqOp29p"
+      ],
+      "lJy00Bb3xJIEmi05": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.tuuSayyL0A5R6hZh"
+      ],
+      "mLJKuz3MbSWRNWmO": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.6UrgCT8MwC8CeGbu"
+      ],
+      "miM6dakmFHddq7SC": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.qdelXqVZKfk1MlAB"
+      ],
+      "nWR9dqrzYKFjRMaj": [
+        "Compendium.pf2e.pathfinder-monster-core-2.Actor.V6CX3rQPq8iqQccW"
+      ],
+      "pQhyorHM61ZvwxBe": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.qyCcr32PVcnNm4Wr"
+      ],
+      "t3JGPzxrUqjUbR2m": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.tuuSayyL0A5R6hZh"
+      ],
+      "vlU08CvB7zyJFcXQ": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.wepiUEi2Lxl8j1BH"
+      ],
+      "wSKu8xi0vdrmnpuk": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.yclRuradTmZbdKFQ"
+      ],
+      "ysKrAbHTbvONjrq2": [
+        "Compendium.pf2e.pathfinder-monster-core.Actor.lFDYJOIp2knQ0IRY"
+      ]
+    }
+  },
+  "displayValues": {
+    "500 feet": "500 футов",
+    "1 minute": "1 минута",
+    "10 minutes": "10 минут",
+    "1 creature": "1 существо",
+    "30 feet": "30 футов",
+    "1 hour": "1 час",
+    "10 creatures": "10 существ",
+    "1 round or sustained up to 1 minute": "1 раунд или поддерживаемое до 1 минуты",
+    "6 creatures": "6 существ",
+    "1 unattended object or willing creature": "1 ничейный предмет или согласное существо",
+    "touch": "касание",
+    "5 minutes": "5 минут",
+    "varies": "различная",
+    "1 spell effect or unattended magic item": "1 эффект заклинания или ничейный магический предмет",
+    "120 feet": "120 футов",
+    "1 round": "1 раунд",
+    "60 feet": "60 футов",
+    "free": "без затрат",
+    "until the start of your next turn": "до начала вашего следующего хода",
+    "1 willing creature": "1 согласное существо",
+    "1 ally": "1 союзник",
+    "5 creatures": "5 существ",
+    "1 ally and 1 enemy": "1 союзник и 1 враг",
+    "1 living creature or 1 willing undead creature": "1 живое существо или 1 согласное существо-нежить",
+    "1 willing undead creature": "1 согласное существо-нежить",
+    "all living and undead creatures": "все живые существа и нежить",
+    "1 living creature": "1 живое существо",
+    "1 willing living creature or 1 undead": "1 согласное живое существо или 1 существо-нежить",
+    "1 undead": "1 существо-нежить",
+    "1 unattended object of light Bulk or less": "1 ничейный предмет лёгкой массы или меньше",
+    "1 unattended object with a Bulk of 1 or less": "1 ничейный предмет массой 1 или меньше",
+    "1 unattended object with a Bulk of 2 or less": "1 ничейный предмет массой 2 или меньше",
+    "see below": "см. ниже",
+    "1 object (cook, lift, or tidy only)": "1 предмет (только готовка, подъём или уборка)",
+    "10 feet": "10 футов",
+    "1 dying creature": "1 умирающее существо",
+    "until the next time you make your daily preparations": "до следующей ежедневной подготовки",
+    "1 falling creature": "1 падающее существо",
+    "8 hours": "8 часов",
+    "1 object of Bulk 1 or less": "1 предмет массой 1 или меньше",
+    "40 feet": "40 футов",
+    "4 hours": "4 часа",
+    "25 gp": "25 зм",
+    "Nature, Religion, or Occultism (expert)": "Природа, Религия или Оккультизм (эксперт)",
+    "Diplomacy or Society": "Дипломатия или Общество",
+    "3 days": "3 дня",
+    "1 year": "1 год",
+    "rare incense and offerings worth a total value of 20 gp × the spell rank": "редкие благовония и подношения общей стоимостью 20 зм × ранг заклинания",
+    "Religion": "Религия",
+    "Crafting, Performance": "Ремесло, Исполнение",
+    "1 creature of a level no greater than double the inveigle ritual's rank": "1 существо, уровень которого не превышает удвоенного ранга ритуала обольщения",
+    "1 day": "1 день",
+    "1 year or until dismissed": "1 год или до отмены",
+    "rare oils worth a total value of 10 gp × the target's level": "редкие масла общей стоимостью 10 зм × уровень цели",
+    "Arcana (expert), Occultism (expert), or Religion (expert)": "Аркана (эксперт), Оккультизм (эксперт) или Религия (эксперт)",
+    "2 creatures": "2 существа",
+    "until the end of the target's next turn": "до конца следующего хода цели",
+    "4d12 hours": "4d12 часов",
+    "Nature (master)": "Природа (мастер)",
+    "Survival": "Выживание",
+    "1 or 10 creatures": "1 или 10 существ",
+    "1 or any number of creatures": "1 или любое число существ",
+    "see text": "см. текст",
+    "1 creature with whom you are familiar": "1 знакомое вам существо",
+    "planetary": "в пределах планеты",
+    "up to 10 creatures": "до 10 существ",
+    "unlimited": "неограниченная",
+    "1 corpse": "1 труп",
+    "1 creature you know by name and have met in person": "1 существо, имя которого вам известно и которое вы лично встречали",
+    "10 creatures you know by name and have met in person": "10 существ, имена которых вам известны и которых вы лично встречали",
+    "1 creature of a level no greater than double the inveigle ritual's level": "1 существо, уровень которого не превышает удвоенного уровня ритуала обольщения",
+    "1 object": "1 предмет",
+    "10 objects": "10 предметов",
+    "any number of objects": "любое число предметов",
+    "1 creature or object": "1 существо или предмет",
+    "up to 10 minutes": "до 10 минут",
+    "rare candles and incense worth a total value of 50 gp": "редкие свечи и благовония общей стоимостью 50 зм",
+    "Occultism (expert) or Religion (expert)": "Оккультизм (эксперт) или Религия (эксперт)",
+    "Occultism or Religion (whichever isn't used for the primary check)": "Оккультизм или Религия (навык, не использованный для основной проверки)",
+    "rare incense and offerings worth a total value of 2 gp × the spell rank × the target's level, see text for more details": "редкие благовония и подношения общей стоимостью 2 зм × ранг заклинания × уровень цели; подробности см. в тексте",
+    "Religion (expert)": "Религия (эксперт)",
+    "Diplomacy": "Дипломатия",
+    "1 creature you know by name": "1 существо, имя которого вам известно",
+    "until your next daily preparations": "до следующей ежедневной подготовки",
+    "1 creature of a level no greater than double the geas ritual's rank": "1 существо, уровень которого не превышает удвоенного ранга ритуала обязательства",
+    "Society or Legal Lore": "Общество или Знания права",
+    "1 item or spell effect": "1 предмет или эффект заклинания",
+    "1 creature made of organic material": "1 существо из органического материала",
+    "1 mile": "1 миля",
+    "1 specific object or type of object": "1 определённый предмет или вид предметов",
+    "1 specific object or type of object, or a specific creature or ancestry": "1 определённый предмет или вид предметов либо определённое существо или родословная",
+    "1 dead creature of 13th level or lower": "1 мёртвое существо 13-го уровня или ниже",
+    "gemstones worth a total value of the target's level (minimum 1) × 200 gp": "драгоценные камни общей стоимостью, равной уровню цели (минимум 1) × 200 зм",
+    "Religion (expert; you must be a demon)": "Религия (эксперт; вы должны быть демоном)",
+    "1 willing creature, or up to 8 willing creatures joining hands": "1 согласное существо или до 8 согласных существ, взявшихся за руки",
+    "cube of stone 10 feet across or smaller": "каменный куб со стороной 10 футов или меньше",
+    "self": "на себя",
+    "1 living or undead creature": "1 живое существо или нежить",
+    "non-magical object of light Bulk or less": "немагический предмет лёгкой массы или меньше",
+    "non-magical object of 1 Bulk or less": "немагический предмет массой 1 или меньше",
+    "non-magical object of 2 Bulk or less, or a magical object of 1 Bulk or less": "немагический предмет массой 2 или меньше либо магический предмет массой 1 или меньше",
+    "1 creature, unattended object, or force construct": "1 существо, ничейный предмет или силовой конструкт",
+    "1 creature that isn't on its home plane": "1 существо, находящееся вне родного плана",
+    "10 creatures that aren't on their home plane": "10 существ, находящихся вне родного плана",
+    "100 feet": "100 футов",
+    "enemies in the area": "враги в области",
+    "all creatures in range": "все существа в пределах дальности",
+    "1 willing living creature": "1 согласное живое существо",
+    "1 flying creature": "1 летающее существо",
+    "10 minutes or 8 hours": "10 минут или 8 часов",
+    "you and up to 9 willing creatures touched": "вы и до 9 согласных существ, которых вы касаетесь",
+    "Occultism (expert)": "Оккультизм (эксперт)",
+    "Nature (expert)": "Природа (эксперт)",
+    "Farming Lore or Survival": "Знания земледелия или Выживание",
+    "0 feet": "0 футов",
+    "20 feet": "20 футов",
+    "1 dead creature": "1 мёртвое существо",
+    "black onyx, see Creature Creation Rituals table": "чёрный оникс, см. таблицу ритуалов создания существ",
+    "1 mindless undead creature with a level no greater than bind undead's spell rank": "1 неразумное существо-нежить, уровень которого не превышает ранга заклинания «Захватить нежить»",
+    "1 non-magical object up to 20 cubic feet in volume and up to 80 Bulk": "1 немагический предмет объёмом до 20 кубических футов и массой до 80",
+    "until the end of your turn": "до конца вашего хода",
+    "1 lock, or a door or container with a latch": "1 замок либо дверь или ёмкость с защёлкой",
+    "1 living creature that has 0 HP": "1 живое существо с 0 ОЗ",
+    "1 or 2 creatures": "1 или 2 существа",
+    "you and allies in the area": "вы и союзники в области",
+    "1 enemy": "1 враг",
+    "1 creature you know well": "1 хорошо знакомое вам существо",
+    "up to 5 creatures": "до 5 существ",
+    "you and up to 10 willing creatures touched": "вы и вплоть до 10 согласных существ, которых вы касаетесь",
+    "5 feet": "5 футов",
+    "up to 8 willing creatures": "вплоть до 8 согласных существ"
+  },
+  "systemEnumValues": [
+    "reaction",
+    "1 to 3"
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "label": "Предметы «Семь бедствий Сэндпойнта»",
+  "mapping": {
+    "name": "name",
+    "description": "system.description.value",
+    "gm": "system.description.gm",
+    "unidentifiedName": "system.identification.unidentified.name",
+    "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+    "areaDetails": "system.area.details",
+    "selfEffectName": "system.selfEffect.name",
+    "spell": {
+      "path": "system.spell",
+      "converter": "structured",
+      "cardinality": "one",
+      "mapping": {
+        "name": "name",
+        "description": "system.description.value",
+        "gm": "system.description.gm",
+        "unidentifiedName": "system.identification.unidentified.name",
+        "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+        "areaDetails": "system.area.details",
+        "selfEffectName": "system.selfEffect.name",
+        "_variants": [
+          {
+            "_when": {
+              "path": "system.overlays",
+              "exists": true
+            },
+            "overlays": {
+              "path": "system.overlays",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "name": "name"
+              },
+              "container": "keyed"
+            }
+          },
+          {
+            "_when": {
+              "path": "system.rules",
+              "exists": true
+            },
+            "ruleLabels": {
+              "path": "system.rules",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "label": "label",
+                "text": "text",
+                "prompt": "prompt",
+                "title": "title",
+                "_variants": [
+                  {
+                    "_when": {
+                      "path": "choices.0.label",
+                      "exists": true
+                    },
+                    "choices": {
+                      "path": "choices",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "suboptions.0.label",
+                      "exists": true
+                    },
+                    "suboptions": {
+                      "path": "suboptions",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "value.0.text",
+                      "exists": true
+                    },
+                    "value": {
+                      "path": "value",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "text": "text",
+                        "title": "title"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "_variants": [
+      {
+        "_when": {
+          "path": "system.overlays",
+          "exists": true
+        },
+        "overlays": {
+          "path": "system.overlays",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "name": "name"
+          },
+          "container": "keyed"
+        }
+      },
+      {
+        "_when": {
+          "path": "system.rules",
+          "exists": true
+        },
+        "ruleLabels": {
+          "path": "system.rules",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label",
+            "text": "text",
+            "prompt": "prompt",
+            "title": "title",
+            "_variants": [
+              {
+                "_when": {
+                  "path": "choices.0.label",
+                  "exists": true
+                },
+                "choices": {
+                  "path": "choices",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "label": "label"
+                  }
+                }
+              },
+              {
+                "_when": {
+                  "path": "suboptions.0.label",
+                  "exists": true
+                },
+                "suboptions": {
+                  "path": "suboptions",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "label": "label"
+                  }
+                }
+              },
+              {
+                "_when": {
+                  "path": "value.0.text",
+                  "exists": true
+                },
+                "value": {
+                  "path": "value",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "text": "text",
+                    "title": "title"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "entries": {
+    "a4XtQkMXuLUDxOcR": {
+      "name": "Маскировка Лираларю"
+    }
+  }
+}

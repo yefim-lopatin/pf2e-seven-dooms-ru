@@ -1,0 +1,374 @@
+{
+  "mapping": {
+    "name": "name",
+    "tokenName": "prototypeToken.name",
+    "blurb": "system.details.blurb",
+    "description": "system.details.publicNotes",
+    "descriptionGM": "system.details.privateNotes",
+    "language": "system.details.languages.details",
+    "senses": "system.perception.details",
+    "descriptionHazard": "system.details.description",
+    "disable": "system.details.disable",
+    "reset": "system.details.reset",
+    "routine": "system.details.routine",
+    "stealth": "system.attributes.stealth.details",
+    "hp": "system.attributes.hp.details",
+    "ac": "system.attributes.ac.details",
+    "allSaves": "system.attributes.allSaves.value",
+    "speed": "system.attributes.speed.details",
+    "willSave": "system.saves.will.saveDetail",
+    "items": {
+      "path": "items",
+      "converter": "sevenDoomsDocument",
+      "documentType": "Item",
+      "cardinality": "many",
+      "mapping": {
+        "name": "name",
+        "description": "system.description.value",
+        "gm": "system.description.gm",
+        "unidentifiedName": "system.identification.unidentified.name",
+        "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+        "areaDetails": "system.area.details",
+        "selfEffectName": "system.selfEffect.name",
+        "spell": {
+          "path": "system.spell",
+          "converter": "structured",
+          "cardinality": "one",
+          "mapping": {
+            "name": "name",
+            "description": "system.description.value",
+            "gm": "system.description.gm",
+            "unidentifiedName": "system.identification.unidentified.name",
+            "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+            "areaDetails": "system.area.details",
+            "selfEffectName": "system.selfEffect.name",
+            "_variants": [
+              {
+                "_when": {
+                  "path": "system.overlays",
+                  "exists": true
+                },
+                "overlays": {
+                  "path": "system.overlays",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "name": "name"
+                  },
+                  "container": "keyed"
+                }
+              },
+              {
+                "_when": {
+                  "path": "system.rules",
+                  "exists": true
+                },
+                "ruleLabels": {
+                  "path": "system.rules",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "label": "label",
+                    "text": "text",
+                    "prompt": "prompt",
+                    "title": "title",
+                    "_variants": [
+                      {
+                        "_when": {
+                          "path": "choices.0.label",
+                          "exists": true
+                        },
+                        "choices": {
+                          "path": "choices",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "label": "label"
+                          }
+                        }
+                      },
+                      {
+                        "_when": {
+                          "path": "suboptions.0.label",
+                          "exists": true
+                        },
+                        "suboptions": {
+                          "path": "suboptions",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "label": "label"
+                          }
+                        }
+                      },
+                      {
+                        "_when": {
+                          "path": "value.0.text",
+                          "exists": true
+                        },
+                        "value": {
+                          "path": "value",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "text": "text",
+                            "title": "title"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_variants": [
+          {
+            "_when": {
+              "path": "system.overlays",
+              "exists": true
+            },
+            "overlays": {
+              "path": "system.overlays",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "name": "name"
+              },
+              "container": "keyed"
+            }
+          },
+          {
+            "_when": {
+              "path": "system.rules",
+              "exists": true
+            },
+            "ruleLabels": {
+              "path": "system.rules",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "label": "label",
+                "text": "text",
+                "prompt": "prompt",
+                "title": "title",
+                "_variants": [
+                  {
+                    "_when": {
+                      "path": "choices.0.label",
+                      "exists": true
+                    },
+                    "choices": {
+                      "path": "choices",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "suboptions.0.label",
+                      "exists": true
+                    },
+                    "suboptions": {
+                      "path": "suboptions",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "value.0.text",
+                      "exists": true
+                    },
+                    "value": {
+                      "path": "value",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "text": "text",
+                        "title": "title"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "_variants": [
+      {
+        "_when": {
+          "path": "system.skills.acrobatics.special.0.label",
+          "exists": true
+        },
+        "skillAcrobatics": {
+          "path": "system.skills.acrobatics.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.athletics.special.0.label",
+          "exists": true
+        },
+        "skillAthletics": {
+          "path": "system.skills.athletics.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.crafting.special.0.label",
+          "exists": true
+        },
+        "skillCrafting": {
+          "path": "system.skills.crafting.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.deception.special.0.label",
+          "exists": true
+        },
+        "skillDeception": {
+          "path": "system.skills.deception.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.nature.special.0.label",
+          "exists": true
+        },
+        "skillNature": {
+          "path": "system.skills.nature.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.stealth.special.0.label",
+          "exists": true
+        },
+        "skillStealth": {
+          "path": "system.skills.stealth.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.survival.special.0.label",
+          "exists": true
+        },
+        "skillSurvival": {
+          "path": "system.skills.survival.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      }
+    ]
+  },
+  "entries": {
+    "10srqxC7QZy0dq2g": {
+      "name": "Призрачный Дьявол",
+      "hp": "исцеление пустотой",
+      "allSaves": "бонус состояния +1 ко всем спасброскам от магии",
+      "items": {
+        "p4vhteq9jjjwqv79": {
+          "name": "Врождённые оккультные заклинания"
+        },
+        "8hqXVJkHnGZuNwiC": {
+          "name": "Смещение",
+          "description": "<p>Открыв дверь, обходящую обычное пространство, вы мгновенно переносите себя и все надетые и удерживаемые предметы из текущего места в видимое свободное пространство в пределах дистанции. Если при этом с вами перенеслось бы другое существо, даже находящееся в межпространственном контейнере, заклинание тратится впустую.</p>\n<hr />\n<p><strong>Усиление (5-й)</strong> Дистанция увеличивается до 1 мили. Вам не нужно видеть место назначения, если вы уже бывали там и знаете его относительное расположение и расстояние до него. Вы получаете временную невосприимчивость на 1 час.</p>"
+        },
+        "7n4hSylUZjDnYxlF": {
+          "name": "Призрачный убийца [Прежняя редакция]",
+          "description": "<p>Вы создаёте призрачный образ самого страшного существа, какое только может вообразить цель. Лишь она видит убийцу, хотя вы различаете смутные очертания иллюзии, когда та бросается в атаку. Эффект убийцы зависит от результата спасброска Воли цели.</p><hr /><p><strong>Критический успех</strong> Цель не подвержена эффекту.</p>\n<p><strong>Успех</strong> Цель получает @Damage[4d6[mental]] урона и @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напугана 1}.</p>\n<p><strong>Провал</strong> Цель получает @Damage[(max(8,@item.rank*2))d6[mental]] урона и @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напугана 2}.</p>\n<p><strong>Критический провал</strong> Цель так напугана, что может умереть. Она должна совершить спасбросок @Check[fortitude|traits:incapacitation]; при провале она умирает. При успехе спасброска Стойкости цель получает @Damage[(max(12,@item.rank*3))d6[mental]] урона, @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Убегает} до конца следующего хода и @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напугана 4}. Этот эффект имеет признак «недееспособность».</p><hr /><p><strong>Усиление (+1)</strong> Урон увеличивается на 2d6 при провале и на 3d6 при критическом провале.</p>"
+        },
+        "MWIP7GBHyIoSTdF1": {
+          "name": "Огненный шар",
+          "description": "<p>Ревущий взрыв огня появляется в указанном вами месте, нанося 6d6 урона огнём.</p>\n<hr />\n<p><strong>Усиление (+1)</strong> Урон увеличивается на 2d6.</p>"
+        },
+        "J091z9hq16hY7Yvb": {
+          "name": "Туман",
+          "description": "<p>Вы призываете облако тумана. Все существа внутри тумана становятся @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Скрытыми}, а все существа вне тумана становятся скрытыми для существ внутри него. Вы можете Развеять облако.</p>"
+        },
+        "JaLeGiqB20uPrJVp": {
+          "name": "Порыв ветра (по желанию)",
+          "description": "<p>Из вашей ладони вырывается сильный ветер, дующий от места, где вы находитесь при сотворении заклинания, до противоположного конца линии. Он тушит небольшие немагические огни, рассеивает туман и дымку, разбрасывает предметы лёгкой Массы или меньше и толкает более тяжёлые предметы. Существа Большого размера или меньше в области должны совершить спасбросок Стойкости. Такие же существа, которые позже войдут в порыв ветра, должны совершить спасбросок при входе.</p>\n<hr />\n<p><strong>Критический успех</strong> Существо не подвержено эффекту.</p>\n<p><strong>Успех</strong> Существо не может двигаться против ветра.</p>\n<p><strong>Провал</strong> Существо падает @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Ничком}. Если оно летело, то вместо этого подвергается эффектам критического провала.</p>\n<p><strong>Критический провал</strong> Существо отбрасывает на 30 футов по направлению ветра, оно падает ничком и получает 2d6 дробящего урона.</p>"
+        },
+        "R2e4R3ErDKPfa8KE": {
+          "name": "Создание пламени",
+          "description": "<p>В вашей ладони появляется небольшой огненный шар, которым вы атакуете в ближнем бою или на расстоянии. Совершите бросок атаки заклинанием против КБ цели. Обычно это дистанционная атака, но вы также можете выполнить атаку ближнего боя против существа в пределах досягаемости вашей безоружной атаки.</p>\n<p>При успехе вы наносите 2d4 урона огнём. При критическом успехе цель получает двойной урон и @Damage[(@item.level)d4[persistent,fire]] урона.</p>\n<hr />\n<p><strong>Усиление (+1)</strong> Урон увеличивается на 1d4, а продолжительный урон при критическом попадании — на 1d4.</p>"
+        },
+        "v3aw3b2npo061s74": {
+          "name": "Призрачные челюсти"
+        },
+        "9k1hwqz0rxe12lw3": {
+          "name": "Призрачное копыто"
+        },
+        "VAiC8RjXYyj4mg5l": {
+          "name": "Сильное ночное зрение"
+        },
+        "CyBBhhJ5po0vQteg": {
+          "name": "Бонус состояния +1 ко всем спасброскам от магии"
+        },
+        "AkYf6nyAWmoBjQDy": {
+          "name": "Возможность для атаки (только призрачным копытом)"
+        },
+        "3y4grxqduw8smrrg": {
+          "name": "(Могильный рыцарь) Восстановление",
+          "description": "<p>Уничтожение Призрачного Дьявола высвобождает его чистую, злую сущность в мир, где он может обрести новое тело и переродиться. Когда Призрачный Дьявол уничтожен, его сущность находит остатки мертвой лошади и восстанавливает своё физическое тело в течение [[/gmr 1d10 #days]]{1d10 дней}. Только выполнение ритуала @UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN] усиленного до 6-го ранга, посвящающее место уничтожения Призрачного Дьявола божеству, может помешать Призрачному Дьяволу вернуться и снова бродить по миру.</p>"
+        },
+        "HQPfbyHso7FMMk1U": {
+          "name": "Исцеление пустотой"
+        },
+        "myfzzx054if3u6rg": {
+          "name": "Проклятый вопль",
+          "description": "<p>Призрачный Дьявол издаёт ужасающее ржание в @Template[cone|distance:30]{конусе}, наносящее @Damage[5d10[sonic]|options:area-damage] урона. Каждое существо в области должно совершить спасбросок @Check[reflex|dc:29|options:area-effect,damaging-effect]{Рефлекса}.</p>\n<p>Призрачный Дьявол не может использовать Проклятый вопль в течение [[/gmr 1d4 #Recharge Accursed Shriek]]{1d4 раунда}.</p>\n<p><strong>Критический успех</strong> Существо не затронуто.</p>\n<p><strong>Успех</strong> Существо получает половину урона.</p>\n<p><strong>Провал</strong> Существо получает полный урон и состояние @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напуган 2} от жуткого шума.</p>\n<p><strong>Критический провал</strong> Существо получает полный урон, состояние напуган 2 и подвергается проклятию. В голове жертвы эхом отдаётся ржание, мешая сосредоточиться. Проклятое существо получает состояние @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Одурманен 2}, пока проклятие не будет снято.</p>"
+        },
+        "FZOeInuA5uaA7PVK": {
+          "name": "Растоптать",
+          "description": "<p>Средний или меньше, Призрачное копыто, простой спасбросок @Check[reflex|dc:26|basic]{Рефлекса}</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+        }
+      }
+    }
+  }
+}

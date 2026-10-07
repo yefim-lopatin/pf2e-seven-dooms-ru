@@ -1,0 +1,339 @@
+{
+  "mapping": {
+    "name": "name",
+    "tokenName": "prototypeToken.name",
+    "blurb": "system.details.blurb",
+    "description": "system.details.publicNotes",
+    "descriptionGM": "system.details.privateNotes",
+    "language": "system.details.languages.details",
+    "senses": "system.perception.details",
+    "descriptionHazard": "system.details.description",
+    "disable": "system.details.disable",
+    "reset": "system.details.reset",
+    "routine": "system.details.routine",
+    "stealth": "system.attributes.stealth.details",
+    "hp": "system.attributes.hp.details",
+    "ac": "system.attributes.ac.details",
+    "allSaves": "system.attributes.allSaves.value",
+    "speed": "system.attributes.speed.details",
+    "willSave": "system.saves.will.saveDetail",
+    "items": {
+      "path": "items",
+      "converter": "sevenDoomsDocument",
+      "documentType": "Item",
+      "cardinality": "many",
+      "mapping": {
+        "name": "name",
+        "description": "system.description.value",
+        "gm": "system.description.gm",
+        "unidentifiedName": "system.identification.unidentified.name",
+        "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+        "areaDetails": "system.area.details",
+        "selfEffectName": "system.selfEffect.name",
+        "spell": {
+          "path": "system.spell",
+          "converter": "structured",
+          "cardinality": "one",
+          "mapping": {
+            "name": "name",
+            "description": "system.description.value",
+            "gm": "system.description.gm",
+            "unidentifiedName": "system.identification.unidentified.name",
+            "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+            "areaDetails": "system.area.details",
+            "selfEffectName": "system.selfEffect.name",
+            "_variants": [
+              {
+                "_when": {
+                  "path": "system.overlays",
+                  "exists": true
+                },
+                "overlays": {
+                  "path": "system.overlays",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "name": "name"
+                  },
+                  "container": "keyed"
+                }
+              },
+              {
+                "_when": {
+                  "path": "system.rules",
+                  "exists": true
+                },
+                "ruleLabels": {
+                  "path": "system.rules",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "label": "label",
+                    "text": "text",
+                    "prompt": "prompt",
+                    "title": "title",
+                    "_variants": [
+                      {
+                        "_when": {
+                          "path": "choices.0.label",
+                          "exists": true
+                        },
+                        "choices": {
+                          "path": "choices",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "label": "label"
+                          }
+                        }
+                      },
+                      {
+                        "_when": {
+                          "path": "suboptions.0.label",
+                          "exists": true
+                        },
+                        "suboptions": {
+                          "path": "suboptions",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "label": "label"
+                          }
+                        }
+                      },
+                      {
+                        "_when": {
+                          "path": "value.0.text",
+                          "exists": true
+                        },
+                        "value": {
+                          "path": "value",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "text": "text",
+                            "title": "title"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_variants": [
+          {
+            "_when": {
+              "path": "system.overlays",
+              "exists": true
+            },
+            "overlays": {
+              "path": "system.overlays",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "name": "name"
+              },
+              "container": "keyed"
+            }
+          },
+          {
+            "_when": {
+              "path": "system.rules",
+              "exists": true
+            },
+            "ruleLabels": {
+              "path": "system.rules",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "label": "label",
+                "text": "text",
+                "prompt": "prompt",
+                "title": "title",
+                "_variants": [
+                  {
+                    "_when": {
+                      "path": "choices.0.label",
+                      "exists": true
+                    },
+                    "choices": {
+                      "path": "choices",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "suboptions.0.label",
+                      "exists": true
+                    },
+                    "suboptions": {
+                      "path": "suboptions",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "value.0.text",
+                      "exists": true
+                    },
+                    "value": {
+                      "path": "value",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "text": "text",
+                        "title": "title"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "_variants": [
+      {
+        "_when": {
+          "path": "system.skills.acrobatics.special.0.label",
+          "exists": true
+        },
+        "skillAcrobatics": {
+          "path": "system.skills.acrobatics.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.athletics.special.0.label",
+          "exists": true
+        },
+        "skillAthletics": {
+          "path": "system.skills.athletics.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.crafting.special.0.label",
+          "exists": true
+        },
+        "skillCrafting": {
+          "path": "system.skills.crafting.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.deception.special.0.label",
+          "exists": true
+        },
+        "skillDeception": {
+          "path": "system.skills.deception.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.nature.special.0.label",
+          "exists": true
+        },
+        "skillNature": {
+          "path": "system.skills.nature.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.stealth.special.0.label",
+          "exists": true
+        },
+        "skillStealth": {
+          "path": "system.skills.stealth.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.survival.special.0.label",
+          "exists": true
+        },
+        "skillSurvival": {
+          "path": "system.skills.survival.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      }
+    ]
+  },
+  "entries": {
+    "vaVIJeQnKFUeaC8K": {
+      "name": "Сгоревший",
+      "description": "<p>Существа, чья жизнь закончилась в огне, могут вернуться в виде нежити, которую называют сгоревшими. Даже в смерти они продолжают гореть, их снедает вечная мука, толкающая их на безрассудное насилие.</p><p>Хотя сгоревшие больше не могут пострадать от огня, они вечно переживают последние мгновения своей смерти, пронзающие их бесконечной жгучей болью. Многие сгоревшие пытаются окунуться в озера или реки, полагая, что пламя, окутывающие их формы, и есть источник их боли. Однако вода скорее мешает, чем помогает, и погружение в нее лишь усиливает их муки.</p><p>Не имея больше возможности общаться ничем, кроме мучительных воплей, сгоревшие, тем не менее сохраняют чувства и память. Однако они редко пытаются действовать в соответствии со своим прошлым, поскольку боль заглушает мысли о дружбе, семье и мести. Со временем сгоревшие начинают делиться своей болью с другими, ведь в тот момент когда их пламя охватывает другое живое существо, они испытывают единственный мимолетный момент облегчения. Это облегчение часто приводит сгоревших к конфликтам с живыми существами, хотя те, кто нападает на крупные поселения, редко выживают долго.</p><p>Некоторые сгоревшие образуются из тех, кто умер в результате спонтанного сгорания, внезапно став настолько горячими, чтобы вспыхнуть. Этот загадочный процесс до конца не изучен, хотя некоторые ученые связывает его со сдвигами силы Плана Огня, вызывающими во Вселенной горячие точки, достаточно мощные, чтобы убить. Гораздо реже возгорания возникают в местах с особенно сильным магическим пламенем, таких как кузницы, используемые для создания магического оружия, когда огонь поджигает существ, и они сгорают, и переходят в небытие за считанные мгновения.</p><p>Независимо от источника возгорания, ужасающие смерти сгоревших преследуют их в загробном мире. Их обугленные, почерневшие трупы, объятые пламенем, постоянно напоминают о последних минутах мучений. Вонь горящей плоти возвещает об их присутствии, каждый сгоревший оставляет после себя черный дым.</p>",
+      "language": "(не может говорить ни на одном языке)",
+      "hp": "исцеление пустотой",
+      "items": {
+        "mc334q1nfka7sngl": {
+          "name": "Огненный кулак"
+        },
+        "udo3xq7mjc590h1k": {
+          "name": "Огненная пылинка"
+        },
+        "fczuoyvm5wqij2to": {
+          "name": "Сильная жара",
+          "description": "<p>5 футов. @Damage[2d6[fire]|options:area-damage] (простой спасбросок @Check[reflex|dc:17|basic|options:area-effect]{Рефлекса})</p>"
+        },
+        "40McFjcRX4SifzsC": {
+          "name": "Исцеление пустотой"
+        },
+        "2fv011dfxayfhevz": {
+          "name": "Уязвимость к воде",
+          "description": "<p>Когда сгоревший получает урон от эффекта воды, его охватывает боль, и он становится @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{ошеломлён 1}. Вода не может погасить пламя сгоревшего.</p>"
+        },
+        "gocrv4xvdtl8n7hl": {
+          "name": "Пылающий вой",
+          "description": "<p>Сгоревший кричит в агонии, заставляя существ в @Template[emanation|distance:15]{эманации} вспыхнуть пламенем, которое наносит @Damage[4d6[fire]|options:area-damage] урона каждому существу в области (простой спасбросок @Check[will|dc:17|basic|options:area-effect,inflicts:frightened]{Воли}). Существо, критически провалившее спасбросок, получает состояние @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Напуган 1}; это состояние напуган является ментальным эффектом с признаками эмоция и страх.</p>\n<p>Сгоревший не может использовать Пылающий вой в течение [[/gmr 1d4 #Recharge Blazing Howl]]{1d4 раунда}.</p>"
+        }
+      }
+    }
+  }
+}

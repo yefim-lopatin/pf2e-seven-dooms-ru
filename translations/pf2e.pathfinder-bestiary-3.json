@@ -1,0 +1,410 @@
+{
+  "mapping": {
+    "name": "name",
+    "tokenName": "prototypeToken.name",
+    "blurb": "system.details.blurb",
+    "description": "system.details.publicNotes",
+    "descriptionGM": "system.details.privateNotes",
+    "language": "system.details.languages.details",
+    "senses": "system.perception.details",
+    "descriptionHazard": "system.details.description",
+    "disable": "system.details.disable",
+    "reset": "system.details.reset",
+    "routine": "system.details.routine",
+    "stealth": "system.attributes.stealth.details",
+    "hp": "system.attributes.hp.details",
+    "ac": "system.attributes.ac.details",
+    "allSaves": "system.attributes.allSaves.value",
+    "speed": "system.attributes.speed.details",
+    "willSave": "system.saves.will.saveDetail",
+    "items": {
+      "path": "items",
+      "converter": "sevenDoomsDocument",
+      "documentType": "Item",
+      "cardinality": "many",
+      "mapping": {
+        "name": "name",
+        "description": "system.description.value",
+        "gm": "system.description.gm",
+        "unidentifiedName": "system.identification.unidentified.name",
+        "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+        "areaDetails": "system.area.details",
+        "selfEffectName": "system.selfEffect.name",
+        "spell": {
+          "path": "system.spell",
+          "converter": "structured",
+          "cardinality": "one",
+          "mapping": {
+            "name": "name",
+            "description": "system.description.value",
+            "gm": "system.description.gm",
+            "unidentifiedName": "system.identification.unidentified.name",
+            "unidentifiedDescription": "system.identification.unidentified.data.description.value",
+            "areaDetails": "system.area.details",
+            "selfEffectName": "system.selfEffect.name",
+            "_variants": [
+              {
+                "_when": {
+                  "path": "system.overlays",
+                  "exists": true
+                },
+                "overlays": {
+                  "path": "system.overlays",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "name": "name"
+                  },
+                  "container": "keyed"
+                }
+              },
+              {
+                "_when": {
+                  "path": "system.rules",
+                  "exists": true
+                },
+                "ruleLabels": {
+                  "path": "system.rules",
+                  "converter": "structured",
+                  "cardinality": "many",
+                  "mapping": {
+                    "label": "label",
+                    "text": "text",
+                    "prompt": "prompt",
+                    "title": "title",
+                    "_variants": [
+                      {
+                        "_when": {
+                          "path": "choices.0.label",
+                          "exists": true
+                        },
+                        "choices": {
+                          "path": "choices",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "label": "label"
+                          }
+                        }
+                      },
+                      {
+                        "_when": {
+                          "path": "suboptions.0.label",
+                          "exists": true
+                        },
+                        "suboptions": {
+                          "path": "suboptions",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "label": "label"
+                          }
+                        }
+                      },
+                      {
+                        "_when": {
+                          "path": "value.0.text",
+                          "exists": true
+                        },
+                        "value": {
+                          "path": "value",
+                          "converter": "structured",
+                          "cardinality": "many",
+                          "mapping": {
+                            "text": "text",
+                            "title": "title"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "_variants": [
+          {
+            "_when": {
+              "path": "system.overlays",
+              "exists": true
+            },
+            "overlays": {
+              "path": "system.overlays",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "name": "name"
+              },
+              "container": "keyed"
+            }
+          },
+          {
+            "_when": {
+              "path": "system.rules",
+              "exists": true
+            },
+            "ruleLabels": {
+              "path": "system.rules",
+              "converter": "structured",
+              "cardinality": "many",
+              "mapping": {
+                "label": "label",
+                "text": "text",
+                "prompt": "prompt",
+                "title": "title",
+                "_variants": [
+                  {
+                    "_when": {
+                      "path": "choices.0.label",
+                      "exists": true
+                    },
+                    "choices": {
+                      "path": "choices",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "suboptions.0.label",
+                      "exists": true
+                    },
+                    "suboptions": {
+                      "path": "suboptions",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "label": "label"
+                      }
+                    }
+                  },
+                  {
+                    "_when": {
+                      "path": "value.0.text",
+                      "exists": true
+                    },
+                    "value": {
+                      "path": "value",
+                      "converter": "structured",
+                      "cardinality": "many",
+                      "mapping": {
+                        "text": "text",
+                        "title": "title"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "_variants": [
+      {
+        "_when": {
+          "path": "system.skills.acrobatics.special.0.label",
+          "exists": true
+        },
+        "skillAcrobatics": {
+          "path": "system.skills.acrobatics.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.athletics.special.0.label",
+          "exists": true
+        },
+        "skillAthletics": {
+          "path": "system.skills.athletics.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.crafting.special.0.label",
+          "exists": true
+        },
+        "skillCrafting": {
+          "path": "system.skills.crafting.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.deception.special.0.label",
+          "exists": true
+        },
+        "skillDeception": {
+          "path": "system.skills.deception.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.nature.special.0.label",
+          "exists": true
+        },
+        "skillNature": {
+          "path": "system.skills.nature.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.stealth.special.0.label",
+          "exists": true
+        },
+        "skillStealth": {
+          "path": "system.skills.stealth.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      },
+      {
+        "_when": {
+          "path": "system.skills.survival.special.0.label",
+          "exists": true
+        },
+        "skillSurvival": {
+          "path": "system.skills.survival.special",
+          "converter": "structured",
+          "cardinality": "many",
+          "mapping": {
+            "label": "label"
+          }
+        }
+      }
+    ]
+  },
+  "entries": {
+    "CjAaXJDY4xpKqQEz": {
+      "name": "Мегаликтис",
+      "items": {
+        "S2oLvvECz7beXP1O": {
+          "name": "Челюсти"
+        },
+        "iIkQe60YaPrjs5Wa": {
+          "name": "Коготь"
+        },
+        "X0u8yRaoumH1Qm27": {
+          "name": "Гибкость",
+          "description": "<p>Любое узкое пространство, в которое мегаликтис едва может просунуть голову, или более широкое пространство считается для него сложной местностью; чтобы двигаться по нему, ему не нужно @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Протиснуться}.</p>"
+        },
+        "DRfoCntho3tTjU8x": {
+          "name": "Сжимать",
+          "description": "<p>@Damage[(1d12+2)[piercing]], простой спасбросок @Check[fortitude|dc:20|basic]{Стойкости}</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+        },
+        "yyvo4Lyc2M4RQhHy": {
+          "name": "Захват"
+        }
+      },
+      "skillAcrobatics": [
+        {
+          "label": "для Освобождения"
+        }
+      ],
+      "description": "<p>Этими гигантскими ласками движет тот же голод, что мучает их мелких сородичей, но из-за гораздо больших размеров они могут быстро истребить диких животных в окрестностях. Обычно они избегают гуманоидов, но известны случаи нападений, вызванных голодом или страхом.</p>\n<p>Мегаликтис использует такой же сдавливающий укус, как и более мелкие ласки, и не разжимает челюстей, даже если на него нападают другие существа. Благодаря внушительным размерам мегаликтис может одолеть крупную добычу, в том числе лошадь, а при удобном случае даже медведя.</p>\n<p>Мегаликтис может вырасти до 5 футов в длину и весит около 150 фунтов.</p>\n<hr />\n<p>Ласки — гибкие, умные хищники, известные как своим красивым гладким мехом, так и способностью пролезать в тесные места. По отношению к собственному весу немногие животные могут соперничать с ласками в прожорливости. Ненасытные, они ежедневно съедают почти половину собственного веса, поэтому постоянно охотятся за новой добычей, чтобы утолить голод.</p>"
+    },
+    "FOG8qK1bWVxp7vmE": {
+      "name": "Императрица буровых червей",
+      "description": "<p>Когда в регионе не хватает пищи, буровые черви в рое становятся все более взвинченными и отчаянными. В конце концов, по какому-то химическому сигналу черви начинают каннибализм, пожирая друг друга в неистовстве, слишком ужасном, чтобы на него смотреть. Один червь выходит из этой схватки победителем; он быстро становится всё больше и прожорливее, пока не достигает совершенно слоновьих размеров.</p><p>Этот червь-императрица живет недолго, поскольку он отправляется на поиски новой кормовой базы и пытаясь прокормиться, съедает все на своем пути. Однако прожорливый метаболизм бурового червя-императрицы требует от его организма больше, чем он может физически выдержать, так как он существует только как сосуд для следующего поколения. Большинство из них живут всего несколько дней, в лучшем случае недель, путешествуя и безостановочно питаясь, прежде чем умереть и тем самым породить новые стаи буровых червей.</p><hr /><p>Эти паразиты Темноземья выделяют едкую, вредную слизь и причиняют мучительные укусы, будь то отвратительный, извивающийся рой червей длиной с палец или одно массивное, копошащееся чудовище. В сообществах Темноземья большинство жителей относятся к буровым червям примерно так же, как представители поверхностных культур к личинкам или тараканам — со всеобщим пренебрежением и отвращением. Дети считают поимку одного бурового червя и использование его для мучения других — обрядом посвящения, хоть и опасным.</p><p>Скромный буровой червь — маленькое и простое существо, как с биологической, так и с магической точки зрения. Эти качества позволяют ему быстро адаптироваться к различным условиям окружающей среды, часть из которых весьма экстремальны, а также делают его восприимчивым к магическому излучению и экспериментам. Многие ученики Темноземья делают свои первые шаги в школе трансмутации, практикуясь на этих червях, в то время как их разновидности, как естественные, так и культивированные, разбросаны под поверхностью Голариона.</p>",
+      "items": {
+        "tauTat1vId2N5H4u": {
+          "name": "Укус"
+        },
+        "tTRbrpeMS0tQXfb1": {
+          "name": "Виброчувствительность (неточное) 60 футов"
+        },
+        "9uDPkhvDHQvs18xG": {
+          "name": "Живорождение",
+          "description": "<p>Когда императрица буровых червей погибает, она с силой выбрасывает молодых особей, которых вынашивает. Этот молодняк извергается в виде @UUID[Compendium.pf2e.pathfinder-bestiary-3.Actor.aQusm2Uh1tw00IVb]{Роя буровых червей} в пространстве императрицы буровых червей.</p><p>Кроме того, каждое существо в @Template[emanation|distance:20]{20-футовой эманации} получает @Damage[5d10[acid]|options:area-damage] (простой спасбросок @Check[reflex|dc:25|basic|options:area-effect]{Рефлекса}) от брызг едких внутренностей.</p>"
+        },
+        "GFFvPm7EbrqTqDNh": {
+          "name": "Бурильщик",
+          "description": "<p>Императрица буровых червей может оставлять за собой туннель, когда зарывается, и обычно она так и делает.</p>"
+        },
+        "8jAtUvdgKdyaNzHN": {
+          "name": "Разъедающий след",
+          "description": "<p>Императрица буровых червей Перемещается, оставляя струйки кислоты в каждой клетке, через которую проходит.</p>\n<p>Существо, которое входит в такую клетку или начинает в ней свой ход, получает @Damage[3d6[acid]] урона (простой спасбросок @Check[fortitude|dc:22|basic]{Стойкости}). Через 1 минуту кислота становится безвредной.</p>"
+        },
+        "HBWRwsQLwNl5P9GZ": {
+          "name": "Болезненный укус",
+          "description": "<p>Укус императрицы буровых червей вызывает мучительную боль. Цель должна преуспеть в спасброске @Check[fortitude|dc:25]{Стойкости}, иначе получит @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Тошноту 1} из-за боли (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Тошноту 2} при критическом провале).</p>"
+        }
+      }
+    },
+    "HhuHFmaq69ekSgEl": {
+      "name": "Шантак",
+      "description": "<p>Внушительные шантаки гораздо более разумны, чем можно было бы предположить по их звериному облику. Они умеют говорить, хотя их голоса звучат как скрежет стекла по камню, и не могут изъясняться ни на одном языке, кроме Акло.</p><p>Способность шантаков перемещаться по космическим просторам со сверхъестественной скоростью позволяет им гнездиться на многочисленных мирах, но, несмотря на такую мобильность, большинство шантаков не желают искать себе новое жилище, если только у них нет другого выхода. Вместо этого они селятся в заброшенных руинах или на дрейфующих в космосе астероидах, выходя на поверхность планет выбранной ими звездной системы только тогда, когда их заставляет желание подкрепиться.</p><p>Несмотря на то, что они не являются обитателями Измерения Снов, их часто можно встретить в этом мире. Способность к космическим полетам позволяет им быстро перемещаться между Ленгом и более гостеприимными районами Измерения Снов, поэтому они особенно востребованы в качестве скакунов у тех, кто имеет дела в дальних уголках сновидения.</p><p>Убедить шантака стать верховым животным, как известно, непросто. Они отказываются от любого обучения, и даже если их удается убедить переправить гуманоида на своей спине, они могут быть упрямыми и непостоянными. Тот, кто полагается на шантака, должен иметь наготове запасной план на случай, если шантан выбросит своего пассажира на астероид или чужую планету после каких-то разногласий.</p><p>Несмотря на то, что шантак размером почти со слона, многие из них испытывают иррациональный страх перед некоторыми существами. В частности, их пугают полуночники, а другие шантаки убегают от гарпий и гаргулий. Несмотря на то, что все эти родословные имеют одну и ту же черту, шантаки боятся не всех видов крылатых гуманоидов, что делает происхождение их фобии еще более загадочным. Шантаки на Голарионе обычно прячутся в отдаленных местах, поскольку некоторые из тех существ, которых они боятся, встречаются на планете в изобилии.</p>",
+      "items": {
+        "y9v6b1HnMTeyR6Aa": {
+          "name": "Челюсти"
+        },
+        "OEzKykNunY5znzf7": {
+          "name": "Коготь"
+        },
+        "6qxKmQ1NJ2m3caTx": {
+          "name": "Не дышит",
+          "description": "<p>Шантак не дышит и иммунен к эффектам, требующим дыхания (например к вдыхаемому яду).</p>"
+        },
+        "zHIoJ0oELrIHabJu": {
+          "name": "Скользкий",
+          "description": "<p>Чешуя шантака покрыта скользкой слизью, поэтому шантак получает бонус обстоятельства +3 к проверкам @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Вырваться}.</p><p>Существо, оседлавшее шантака, получает удвоенный штраф обстоятельства к спасброскам Рефлекса (-4 вместо -2), пока оно верхом.</p>"
+        },
+        "tX7g78Vle2NcjulW": {
+          "name": "Обстрел в полёте",
+          "description": "<p>Шантак \"Летит\" вплоть до своей Скорости полета и наносит два \"Удара\" когтями в любой момент этого движения. Каждый \"Удар\" должен быть нанесен по другому существу. К атакам применяется штраф множественных атак, как обычно.</p>"
+        },
+        "iJaSMrCi07AzcK4L": {
+          "name": "Совместная защита",
+          "description": "<p><strong>Требования:</strong> Существо верхом на шантаке</p><hr /><p><strong>Эффект:</strong> Шантак распространяет свою способность \"Не дышит\" и сопротивление холоду на одно существо, оседлавшее его. Он может снять эту защиту свободным действием.</p><p>@UUID[Compendium.pf2e.bestiary-effects.Item.zqgntQXIEbulBgZX]</p>"
+        }
+      }
+    },
+    "aQusm2Uh1tw00IVb": {
+      "name": "Рой буровых червей",
+      "items": {
+        "5OmSIpE30Qir6OKb": {
+          "name": "Виброчувствительность (неточное) 60 футов"
+        },
+        "uLElA6gc5JAsMKBq": {
+          "name": "Разум роя"
+        },
+        "OLXpGW8u6XmpJXAp": {
+          "name": "Роящиеся укусы",
+          "description": "<p>Каждый враг в пространстве роя получает @Damage[3d6[acid]|options:area-damage] (простой спасбросок @Check[reflex|dc:22|basic|options:area-effect,inflicts:sickened]{Рефлекса}).</p><p>Существо, провалившее свой спасбросок, испытывает @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Тошноту 1} от болезненных укусов роя.</p>"
+        }
+      },
+      "description": "<p>Один буровой червь длиной в палец неприятен, но в основном безобиден. Десять тысяч буровых червей, напротив, представляют серьёзную угрозу даже для опытных искателей приключений. Бесчисленные черви образуют бурлящую зловонную массу кислоты и боли, способную принести ужасную смерть любому человеку или зверю, который не сможет спастись. К несчастью для всех, кроме самих буровых червей, большинство встреч происходит именно с роями.</p>\n<hr />\n<p>Эти паразиты Темноземья выделяют едкую вредную слизь и причиняют мучительные укусы — как в виде отвратительного извивающегося роя червей длиной с палец, так и в виде одного огромного неуклюжего чудовища. В сообществах Темноземья большинство жителей относятся к буровым червям примерно так же, как обитатели поверхности к личинкам или тараканам: с общим презрением и отвращением. Дети считают поимку одного бурового червя и мучение других с его помощью своего рода обрядом взросления, пусть и опасным.</p>\n<p>Обычный буровой червь — маленькое и простое существо как с биологической, так и с магической точки зрения. Эти качества позволяют ему быстро приспосабливаться к самым разным условиям, в том числе весьма суровым, а также делают его восприимчивым к магическому излучению и опытам. Многие ученики Темноземья делают первые шаги в школе трансмутации, практикуясь на этих червях, а их разновидности, как естественные, так и выведенные искусственно, встречаются повсюду под поверхностью Голариона.</p>"
+    }
+  }
+}
