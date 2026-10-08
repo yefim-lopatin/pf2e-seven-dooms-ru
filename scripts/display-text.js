@@ -1,4 +1,5 @@
 import { active } from "./macro-ui.js";
+import "./content-tools.js";
 const MODULE_ID = "pf2e-seven-dooms-ru";
 const SOURCE_ID = "pf2e-ap200-seven-dooms-for-sandpoint";
 const CLASS = "pf2e-seven-dooms-ru";
